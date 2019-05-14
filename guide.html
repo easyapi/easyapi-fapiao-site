@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>接入流程 - 发票管理 - EasyAPI场景化服务</title>
+    <link href="https://static.easyapi.com/css/site.min.css" rel="stylesheet"/>
+    <meta name="descriptions" content="EasyAPI发票管理是一个一站式发票管理平台，支持电子发票，纸质发票，轻松与您的产品无缝对接。"/>
+    <meta name="keywords" content="申请发票,申请发票API,发票管理,发票管理API,电子发票,电子发票API,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/guide.css">
+</head>
+<body>
+        <!-- banner and header start-->
+    <div class="fp_bd">
+        <div class="fp_width">
+            <div class="fp_head">
+            <ul class="fp_logo">
+                <li>
+                    <a href="https://fapiao.easyapi.com/">
+                        <img src="https://static.easyapi.com/images/market/logo.png">
+                    </a>
+                </li>
+                <li>
+                    <span>&nbsp;·&nbsp;</span>
+                    <a href="index.html">
+                        发票管理
+                    </a>
+                </li>
+            </ul>
+                <ul class="fa_list"  style="position:relative;">
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="guide.html" class="big-text">接入流程</a>
+                    </li>
+                    <li>
+                        <a href="solution.html">解决方案</a>
+                    </li>
+                    <li>
+                        <a href="together.html">渠道合作</a>
+                    </li>
+                    <li>
+                        <a href="#" id="us">咨询联系</a>
+                    </li>
+                    <div class="contact_us" style="display:none;" id="contact_us_show"> 
+                        <div class="trangle"></div>
+                        <span>
+                            <span class="contact_us_h3">联系电话</span> ：<span class="contact_us_color"> 0510-85180020</span>  <br>
+                            <span class="contact_us_h3">微信</span>：
+                            <span class="contact_us_color">13656171020 </span>  <br>
+                            <span class="contact_us_h3">QQ</span> ：
+                            <span class="contact_us_color">149151419 </span>
+                        </span>
+                    </div>
+                </ul>
+                <ul class="fa_fr">
+                    <li id="register">
+                        <a href="https://fapiao.easyapi.com/console/signup">注册</a>
+                    </li>
+                    <li id="login">
+                        <a href="https://fapiao.easyapi.com/console/login">登录</a>
+                    </li>
+                    <li class="fa_console dis_hide" id="console">
+                        <a href="https://fapiao.easyapi.com/console/">控制台</a>
+                    </li>
+                    <li class="fa_avatar dis_hide" id="avatar">
+                        <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg">
+                        <div class="avatar_down">
+                            <div class="avatar_item" >
+                                <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner_content">
+                <p class="banner_title">接入流程</p>
+            </div>
+        </div>
+    </div>
+    <!--  banber and header end -->
+    <!-- relation  start-->
+
+    <!-- relation end -->
+    
+    <div class="cooperetion" >
+        <div class="fp_width">
+            <div class="product_title">
+                <span>接入流程</span>
+            </div>
+            <ul class="cooperetion_img">
+                <li>
+                    <a href="#" target="_blank">
+                            <img src="images/pc/pic_invoice_flow_flow1.png"/>
+                    </a>
+                    <div class="text_center">
+                         <span class="number">1</span>
+                         <p> 商务浅谈</p>
+                         <span class="text_color">确定我们之间的合作方式<br>
+                         我们的客服人员全程协助 <br>
+                         联系电话:0510-85180020</span>
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/pc/pic_invoice_flow_flow2.png"/></a>
+                        <div class="text_center">
+                            <span class="number">2</span>
+                            <p> 申请电子发票资质</p>
+                            <span class="text_color">网上申请，无需前往柜台</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/pc/pic_invoice_flow_flow3.png"/></a>
+                        <div class="text_center">
+                            <span class="number">3</span>
+                            <p> 发行税控盘</p>
+                            <span class="text_color">
+                                    建议单独再申请1个税控盘<br>
+                                    托管版需要邮寄<br>
+                                    单机版公司内配置即可</span>
+                        </div>
+    
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                            <img src="images/pc/pic_invoice_flow_flow4.png"/></a>
+                        <div class="text_center">
+                                <span class="number">4</span>
+                                <p> 购买电子发票</p>
+                                <span class="text_color">可前往自助机购买</span>
+                            </div>
+                </li>
+                <li>
+                        <a href="#" target="_blank">
+                            <img src="images/pc/pic_invoice_flow_flow5.png"/>
+                        </a>
+                        <div class="text_center">
+                                <span class="number">5</span>
+                                <p> 系统对接上线</p>
+                                <span class="text_color">完成系统对接<br>
+                                并开具测试票 <br>
+                                平均耗时一天</span>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- relation end -->
+    <!-- method start -->
+
+    <div class="relation_version" >
+        <div class="fp_width">
+            <div class="relation_title">
+                <span>用最简化的方式与专业的指引，让企业系统快速具有电子发票能力</span>
+            </div>
+            <ul class="relation_img">
+                <li>
+                    <div class="relation_first">
+                        <h3>单机版</h3>
+                        <p>需要公司内部一台电脑，安装好对应税务服务商的软件，电脑开启软件运行中，可以正常开具电子发票，关机后不能开具。
+                            <br>本方案成本低，最低可至 <span style="color:red;font-size:28px;">0</span>元</p>
+                        <div class="img_cirle">
+                                <img src="images/pc/ic_invoice_flow_cost.png" alt=" 未加载">
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relation_first">
+                            <h3>托管版</h3>
+                            <p>托管开票是企业将税控设备托管至电子发票<br>
+                                    服务平台托管中心，由厂商提供开票服务及<br>
+                                    运维，企业与API系统对接，即可进行纸质<br>
+                                    发票或电子发票的开具。<br>
+                                    本方案成本较高，但可以<span style="color:red;font-size:28px;">7x24</span>小时开票，<br>
+                                    具体价格欢迎咨询 
+                            </p>
+                        <div class="img_cirle">
+                            <img src="images/pc/ic_invoice_flow_time.png" alt=" 未加载">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--method end  -->
+    <!-- promblem start -->
+    <div class="promblem" >
+        <div class="fp_width">
+            <div class="relation_title">
+                <span>常见问题</span>
+            </div>
+            <div>
+                <b style="font-size:16px;">税控盘是什么？</b>
+                 <p class="padding_bottom" style="font-size:14px;">企业开电子发票需要用到专用的税控硬件，国税局规定只有两家厂商提供：百望的核心板卡、航天信息的金税盘。无论企业当前开纸质发票是使用航天信息金税盘还是百望税控盘，电子发票均可任意选择其中一家。</p>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- promblem end -->
+
+    <!-- content end -->
+    
+    
+    
+        <div class="u-footer f-cb">
+            <p>
+                <a href="https://www.easyapi.com/info/about">关于我们</a>
+                <a href="https://www.easyapi.com/info/together">合作伙伴</a>
+                <a href="https://www.easyapi.com/info/contact">联系我们</a>
+                <a href="https://www.easyapi.com/info/donate">支持我们</a>
+            </p>
+            <p>Copyright © 2014～2019 上海帮趣网络技术有限公司</p>
+            <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    
+        <script>
+    
+    //        $("#change-more").on("click",function () {
+    //            $(this).prevAll().removeClass('active');
+    //            $("#Lmore").toggle();
+    //        })
+    //
+    //        $('[setL]').on("click",function () {
+    //            $(this).prevAll().removeClass('active');
+    //            $(this).addClass("active");
+    //        })
+    
+            if($.cookie("fpAuthToken")){
+                $.ajax({
+                    method: 'GET',
+                    url: 'https://fapiao-api.easyapi.com/api/account',
+                    beforeSend: function (request) {
+                        request.setRequestHeader("Authorization", "Bearer " + $.cookie("fpAuthToken"));
+                    },
+                    success: function (data) {
+                        //$("#photo").attr("src", data.photo + "!icon.jpg");
+                        $("#avatar").removeClass('dis_hide');
+                        $("#login").addClass('dis_hide');
+                        $("#register").addClass('dis_hide');
+                        $("#console").removeClass('dis_hide');
+                    }
+                });
+            }
+        </script>
+        <script src="https://static.easyapi.com/scripts/meiqia.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

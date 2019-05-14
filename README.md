@@ -1,2 +1,41 @@
-# easyapi-fapiao-site
-EasyAPI发票管理站点
+EasyAPI发票管理官网
+--------
+
+EasyAPI发票管理官网，是一个纯静态项目工程，右上角使用Ajax调用EasyAPI获取账号信息接口，当账户登录显示用户信息。
+
+## 开发建议
+- 公共样式表、脚步、图片放到easyapi-static项目中
+- 每个站点，根据需要独立建立静态文件，css，images，js（命名参照jhipster框架，Bootstrap等）
+- 样式表使用less语法编写
+
+## 命名规范
+
+- 使用kebab-case（短横线）命名方式
+- 图片资源采用的命名规范
+- CSS命名规范
+- 常规名称命名方案，参见EasyAPI中英文翻译
+
+## 目录结构
+
+``` bash
+├── README.md
+├── index.html              #首页
+├── case.html               #典型案例
+├── guide.html              #接入流程
+├── info.html               #产品介绍
+├── partner.html            #合作伙伴
+├── solution.html           #解决方案
+├── together.html           #渠道合作
+├── images                  #图片文件夹
+├── css                     #样式文件夹
+└── js                      #脚本文件夹
+
+```
+
+    
+## 常见问题
+	
+**1. 样式图片等无法访问，访问本地静态资源**
+
+    请单独运行easyapi-static项目(https://code.aliyun.com/easyapi/easyapi-static)，端口使用80，访问地址http://localhost。
+    使用SwitchHosts，设置127.0.0.1 static.easyapi.com。
