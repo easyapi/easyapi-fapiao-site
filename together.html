@@ -1,268 +1,254 @@
 ﻿<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<html lang="zh">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>渠道合作 - 发票管理 - EasyAPI场景化服务</title>
-    <link href="https://static.easyapi.com/css/site.min.css" rel="stylesheet"/>
-    <meta name="descriptions" content="EasyAPI发票管理是一个一站式发票管理平台，支持电子发票，纸质发票，轻松与您的产品无缝对接。"/>
-    <meta name="keywords" content="申请发票,申请发票API,发票管理,发票管理API,电子发票,电子发票API,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/together.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>渠道合作 - 发票管理 - EasyAPI场景化服务</title>
+  <link href="https://static.easyapi.com/css/site.min.css" rel="stylesheet"/>
+  <meta name="descriptions" content="EasyAPI发票管理是一个一站式发票管理平台，支持电子发票，纸质发票，轻松与您的产品无缝对接。"/>
+  <meta name="keywords" content="申请发票,申请发票API,发票管理,发票管理API,电子发票,电子发票API,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/together.css">
 </head>
 
 <body>
-        <!-- banner and header start-->
-    <div class="fp_bd">
-        <div class="fp_width">
-            <div class="fp_head">
-            <ul class="fp_logo">
-                <li>
-                    <a href="https://fapiao.easyapi.com/">
-                        <img src="https://static.easyapi.com/images/market/logo.png">
-                    </a>
-                </li>
-                <li>
-                    <span>&nbsp;·&nbsp;</span>
-                    <a href="index.html">
-                        发票管理
-                    </a>
-                </li>
-            </ul>
-                <ul class="fa_list"  style="position:relative;">
-                    <li>
-                        <a href="index.html">首页</a>
-                    </li>
-                    <li>
-                        <a href="guide.html">接入流程</a>
-                    </li>
-                    <li>
-                        <a href="solution.html">解决方案</a>
-                    </li>
-                    <li>
-                        <a href="together.html" class="big-text">渠道合作</a>
-                    </li>
-                    <li>
-                        <a href="#" id="us">咨询联系</a>
-                    </li>
-                    <div class="contact_us" style="display:none;" id="contact_us_show"> 
-                        <div class="trangle"></div>
-                        <span>
-                            <span class="contact_us_h3">联系电话</span> ：<span class="contact_us_color"> 0510-85180020</span>  <br>
-                            <span class="contact_us_h3">微信</span>：
-                            <span class="contact_us_color">13656171020 </span>  <br>
-                            <span class="contact_us_h3">QQ</span> ：
-                            <span class="contact_us_color">149151419 </span>
-                        </span>
-                    </div>
-                </ul>
-                <ul class="fa_fr">
-                    <li id="register">
-                        <a href="https://fapiao.easyapi.com/console/signup">注册</a>
-                    </li>
-                    <li id="login">
-                        <a href="https://fapiao.easyapi.com/console/login">登录</a>
-                    </li>
-                    <li class="fa_console dis_hide" id="console">
-                        <a href="https://fapiao.easyapi.com/console/">控制台</a>
-                    </li>
-                    <li class="fa_avatar dis_hide" id="avatar">
-                        <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg">
-                        <div class="avatar_down">
-                            <div class="avatar_item" >
-                                <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="banner_content">
-                <p class="banner_title">期待您共同抢占电子发票的红利</p>
-                <p class="banner_dis">为千万APP、小程序、微信服务号、网站提供完整的电子发票解决方案</p>
-            </div>
+<!-- banner and header start-->
+<div class="fp_bd">
+  <div class="fp_width">
+    <div class="fp_head">
+      <ul class="fp_logo">
+        <li>
+          <a href="https://fapiao.easyapi.com/">
+            <img src="https://static.easyapi.com/images/market/logo.png">
+          </a>
+        </li>
+        <li>
+          <span>&nbsp;·&nbsp;</span>
+          <a href="index.html">
+            发票管理
+          </a>
+        </li>
+      </ul>
+      <ul class="fa_list" style="position:relative;">
+        <li>
+          <a href="index.html">首页</a>
+        </li>
+        <li>
+          <a href="guide.html">接入流程</a>
+        </li>
+        <li>
+          <a href="solution.html">解决方案</a>
+        </li>
+        <li>
+          <a href="together.html" class="big-text">渠道合作</a>
+        </li>
+        <li>
+          <a href="#" id="us">咨询联系</a>
+        </li>
+        <div class="contact_us" style="display:none;" id="contact_us_show">
+          <div class="trangle"></div>
+          <div>
+            <span class="contact_us_h3">联系电话</span> ：<span class="contact_us_color"> 0510-85180020</span> <br>
+            <span class="contact_us_h3">微信</span>：<span class="contact_us_color">13656171020 </span> <br>
+            <span class="contact_us_h3">QQ</span> ：<span class="contact_us_color">149151419 </span>
+          </div>
         </div>
-    </div>
-    <!--  banber and header end -->
-    <!-- cnotent  start-->
-    <!-- product-status  start-->
-    <div class="advice_content" >
-        <div class="fp_width">
-            <div class="product_title">
-                <span>我们的优势</span>
+      </ul>
+      <ul class="fa_fr">
+        <li id="register">
+          <a href="https://fapiao.easyapi.com/console/signup">注册</a>
+        </li>
+        <li id="login">
+          <a href="https://fapiao.easyapi.com/console/login">登录</a>
+        </li>
+        <li class="fa_console dis_hide" id="console">
+          <a href="https://fapiao.easyapi.com/console/">控制台</a>
+        </li>
+        <li class="fa_avatar dis_hide" id="avatar">
+          <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg">
+          <div class="avatar_down">
+            <div class="avatar_item">
+              <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
             </div>
-            <ul class="product_img">
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="images/pc/ic_invoice_cooperation_leading.png"/>
-                    </a>
-                    <p>国内领先的专业电子发票SaaS方案服务商</p>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="images/pc/ic_invoice_cooperation_symbiosis.png"/></a>
-                    <p>与国内多家税务服务商建立深度合作关系</p>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="images/pc/ic_invoice_cooperation_team.png"/></a>
-                    <p>拥有专业的技术团队</p>
-                </li>
-            </ul>
-        </div>
+          </div>
+        </li>
+      </ul>
     </div>
-    <!-- product-status  end-->
-    
-    <!-- statisfy-who start -->
-    <div class="statisfy_content" >
-        <div class="fp_width">
-            <div class="product_title">
-                <span>适合做代理商</span>
-            </div>
-            <ul class="statisfy_img">
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="images/pc/pic_invoice_home_software.png"/>
-                    </a>
-                    <p class="statisfy_text">软件开发商，为客户提供各类产品定制开发服务</p>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="images/pc/pic_invoice_cooperation_team.png"/></a>
-                    <p class="statisfy_text">有成熟的销售团队，懂互联网产品，有客户基础</p>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="images/pc/pic_invoice_cooperation_needs.png"/></a>
-                    <p class="statisfy_text">客户群有电子发票需求，有重叠客户群</p>
-                </li>
-            </ul>
-        </div>
+    <div class="banner_content">
+      <p class="banner_title">期待您共同抢占电子发票的红利</p>
+      <p class="banner_dis">为千万APP、小程序、微信服务号、网站提供完整的电子发票解决方案</p>
     </div>
-    <!-- statifis-who end -->
+  </div>
+</div>
+<!--  banber and header end -->
+<!-- cnotent  start-->
+<!-- product-status  start-->
+<div class="advice_content">
+  <div class="fp_width">
+    <div class="product_title">
+      <span>我们的优势</span>
+    </div>
+    <ul class="product_img">
+      <li>
+        <a href="#" target="_blank">
+          <img src="images/pc/ic_invoice_cooperation_leading.png"/>
+        </a>
+        <p>国内领先的专业电子发票SaaS方案服务商</p>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <img src="images/pc/ic_invoice_cooperation_symbiosis.png"/></a>
+        <p>与国内多家税务服务商建立深度合作关系</p>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <img src="images/pc/ic_invoice_cooperation_team.png"/></a>
+        <p>拥有专业的技术团队</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- product-status  end-->
 
-    
-
-    <!-- why owner start -->
-    <div class="why_owner" >
-        <div class="fp_width">
-            <div class="product_title">
-                <span>我们可以提供</span>
-            </div>
-            <ul class="offer_img">
-                <li>
-                    <a href="javascript:;" target="_blank">
-                        <img src="images/pc/ic_invoice_cooperation_developerstrain.png"/>
-                    </a>
-                    <p>培训支持</p>
-                    <span class="text"> 风格的项目资料，定期整理客户案例，提供全方位的培训支持</span>
-                </li>
-                <li>
-                    <a href="javascript:;" target="_blank">
-                        <img src="images/pc/ic_invoice_cooperation_technology.png"/>
-                    </a>
-                    <p>技术支持</p>
-                    <span class="text"> 提供专业的技术团队，进行7x12小时技术服务，保障客户体验</span>
-                </li>
-                <li>
-                    <a href="javascript:;" target="_blank">
-                        <img src="images/pc/pic_invoice_home_maintain.png"/>
-                    </a>
-                    <p>服务支持</p>
-                    <span class="text"> 专业的售后服务团队，解答电子发票从无到有的全部问题</span>
-                </li>
-                <li>
-                    <a href="javascript:;" target="_blank">
-                        <img src="images/pc/ic_invoice_cooperation_generalize.png"/></a>
-                    <p>推广支持</p>
-                    <span class="text"> 会通过各大平台投放广告，提示产品知名度，提升产品竞争力</span>
-                </li>
-            </ul>
-        </div>
+<!-- statisfy-who start -->
+<div class="statisfy_content">
+  <div class="fp_width">
+    <div class="product_title">
+      <span>适合做代理商</span>
     </div>
-    
-    <!-- why owner end -->
+    <ul class="statisfy_img">
+      <li>
+        <a href="#" target="_blank">
+          <img src="images/pc/pic_invoice_home_software.png"/>
+        </a>
+        <p class="statisfy_text">软件开发商，为客户提供各类产品定制开发服务</p>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <img src="images/pc/pic_invoice_cooperation_team.png"/></a>
+        <p class="statisfy_text">有成熟的销售团队，懂互联网产品，有客户基础</p>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <img src="images/pc/pic_invoice_cooperation_needs.png"/></a>
+        <p class="statisfy_text">客户群有电子发票需求，有重叠客户群</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- statifis-who end -->
+
+
+<!-- why owner start -->
+<div class="why_owner">
+  <div class="fp_width">
+    <div class="product_title">
+      <span>我们可以提供</span>
+    </div>
+    <ul class="offer_img">
+      <li>
+        <a href="javascript:;" target="_blank">
+          <img src="images/pc/ic_invoice_cooperation_developerstrain.png"/>
+        </a>
+        <p>培训支持</p>
+        <span class="text"> 风格的项目资料，定期整理客户案例，提供全方位的培训支持</span>
+      </li>
+      <li>
+        <a href="javascript:;" target="_blank">
+          <img src="images/pc/ic_invoice_cooperation_technology.png"/>
+        </a>
+        <p>技术支持</p>
+        <span class="text"> 提供专业的技术团队，进行7x12小时技术服务，保障客户体验</span>
+      </li>
+      <li>
+        <a href="javascript:;" target="_blank">
+          <img src="images/pc/pic_invoice_home_maintain.png"/>
+        </a>
+        <p>服务支持</p>
+        <span class="text"> 专业的售后服务团队，解答电子发票从无到有的全部问题</span>
+      </li>
+      <li>
+        <a href="javascript:;" target="_blank">
+          <img src="images/pc/ic_invoice_cooperation_generalize.png"/></a>
+        <p>推广支持</p>
+        <span class="text"> 会通过各大平台投放广告，提示产品知名度，提升产品竞争力</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- why owner end -->
 <!-- join -->
-<div class="join" >
-        <div class="fp_width">
-            <div class="product_title">
-                <span>加盟流程</span>
-            </div>
-            <ul class="posi">
-                <li>
-                    <div class="parent">
-                        <img src="images/pc/ic_invoice_cooperation_generalize.pngic_invoice_cooperation_service.pngic_invoice_cooperation_technology.pngic_invoice_cooperation_flow 1.png"/>
-                    
-                        <p class="text1">业务洽谈</p>
-                        <p class="text2">签订合同</p>
-                        <p class="text3">支持款项</p>
-                        <p class="text4">销售产品</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
- </div>
-    
-    
-    
-        <div class="u-footer f-cb">
-            <p>
-                <a href="https://www.easyapi.com/info/about">关于我们</a>
-                <a href="https://www.easyapi.com/info/together">合作伙伴</a>
-                <a href="https://www.easyapi.com/info/contact">联系我们</a>
-                <a href="https://www.easyapi.com/info/donate">支持我们</a>
-            </p>
-            <p>Copyright © 2014～2019 上海帮趣网络技术有限公司</p>
-            <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
-        </div>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    
-        <script>
-    
-    //        $("#change-more").on("click",function () {
-    //            $(this).prevAll().removeClass('active');
-    //            $("#Lmore").toggle();
-    //        })
-    //
-    //        $('[setL]').on("click",function () {
-    //            $(this).prevAll().removeClass('active');
-    //            $(this).addClass("active");
-    //        })
-    
-            if($.cookie("fpAuthToken")){
-                $.ajax({
-                    method: 'GET',
-                    url: 'https://fapiao-api.easyapi.com/api/account',
-                    beforeSend: function (request) {
-                        request.setRequestHeader("Authorization", "Bearer " + ($.cookie("fpAuthToken"));
-                    },
-                    success: function (data) {
-                        //$("#photo").attr("src", data.photo + "!icon.jpg");
-                        $("#avatar").removeClass('dis_hide');
-                        $("#login").addClass('dis_hide');
-                        $("#register").addClass('dis_hide');
-                        $("#console").removeClass('dis_hide');
-                    }
-                });
-            }
-        </script>
-        <script src="https://static.easyapi.com/scripts/meiqia.js"></script>
-        <script src="js/main.js"></script>
+<div class="join">
+  <div class="fp_width">
+    <div class="product_title">
+      <span>加盟流程</span>
+    </div>
+    <ul class="posi">
+      <li>
+        <div class="parent">
+          <img
+            src="images/pc/ic_invoice_cooperation_generalize.pngic_invoice_cooperation_service.pngic_invoice_cooperation_technology.pngic_invoice_cooperation_flow 1.png"/>
 
-        <script type="text/javascript">
-            var _hmt = _hmt || [];
-            (function() {
-                var hm = document.createElement("script");
-                hm.src = "//hm.baidu.com/hm.js?07b306be81dcbc23fd29affebc7b173e";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
+          <p class="text1">业务洽谈</p>
+          <p class="text2">签订合同</p>
+          <p class="text3">支持款项</p>
+          <p class="text4">销售产品</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="footer f-cb">
+  <p>
+    <a href="https://www.easyapi.com/info/about">关于我们</a>
+    <a href="https://www.easyapi.com/info/together">合作伙伴</a>
+    <a href="https://www.easyapi.com/info/contact">联系我们</a>
+    <a href="https://www.easyapi.com/info/donate">支持我们</a>
+  </p>
+  <p>Copyright © 2014～2019 上海帮趣网络技术有限公司</p>
+  <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<script>
+  if ($.cookie("fpAuthToken")) {
+    $.ajax({
+      method: 'GET',
+      url: 'https://fapiao-api.easyapi.com/api/account',
+      beforeSend: function (request) {
+        request.setRequestHeader("Authorization", "Bearer " + ($.cookie("fpAuthToken"));
+      },
+      success: function (data) {
+        //$("#photo").attr("src", data.photo + "!icon.jpg");
+        $("#avatar").removeClass('dis_hide');
+        $("#login").addClass('dis_hide');
+        $("#register").addClass('dis_hide');
+        $("#console").removeClass('dis_hide');
+      }
+    });
+  }
+</script>
+<script src="https://static.easyapi.com/scripts/meiqia.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?07b306be81dcbc23fd29affebc7b173e";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
 </body>
 
 </html>

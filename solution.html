@@ -1,331 +1,323 @@
 ﻿<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<html lang="zh">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>解决方案 - 发票管理 - EasyAPI场景化服务</title>
-    <link href="https://static.easyapi.com/css/site.min.css" rel="stylesheet"/>
-    <meta name="descriptions" content="EasyAPI发票管理是一个一站式发票管理平台，支持电子发票，纸质发票，轻松与您的产品无缝对接。"/>
-    <meta name="keywords" content="申请发票,申请发票API,发票管理,发票管理API,电子发票,电子发票API,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/solution.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>解决方案 - 发票管理 - EasyAPI场景化服务</title>
+  <link href="https://static.easyapi.com/css/site.min.css" rel="stylesheet"/>
+  <meta name="descriptions" content="EasyAPI发票管理是一个一站式发票管理平台，支持电子发票，纸质发票，轻松与您的产品无缝对接。"/>
+  <meta name="keywords" content="申请发票,申请发票API,发票管理,发票管理API,电子发票,电子发票API,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/solution.css">
 </head>
 
 <body>
-        <!-- banner and header start-->
-    <div class="fp_bd">
-        <div class="fp_width">
-            <div class="fp_head">
-            <ul class="fp_logo">
-                <li>
-                    <a href="https://fapiao.easyapi.com/">
-                        <img src="https://static.easyapi.com/images/market/logo.png">
-                    </a>
-                </li>
-                <li>
-                    <span>&nbsp;·&nbsp;</span>
-                    <a href="index.html">
-                        发票管理
-                    </a>
-                </li>
-            </ul>
-                <ul class="fa_list"  style="position:relative;">
-                    <li>
-                        <a href="index.html">首页</a>
-                    </li>
-                    <li>
-                        <a href="guide.html">接入流程</a>
-                    </li>
-                    <li>
-                        <a href="solution.html" class="big-text">解决方案</a>
-                    </li>
-                    <li>
-                        <a href="together.html" >渠道合作</a>
-                    </li>
-                    <li>
-                        <a href="#" id="us">咨询联系</a>
-                    </li>
-                    <div class="contact_us" style="display:none;" id="contact_us_show"> 
-                        <div class="trangle"></div>
-                        <span>
-                            <span class="contact_us_h3">联系电话</span> ：<span class="contact_us_color"> 0510-85180020</span>  <br>
-                            <span class="contact_us_h3">微信</span>：
-                            <span class="contact_us_color">13656171020 </span>  <br>
-                            <span class="contact_us_h3">QQ</span> ：
-                            <span class="contact_us_color">149151419 </span>
-                        </span>
-                    </div>
-                </ul>
-                <ul class="fa_fr">
-                    <li id="register">
-                        <a href="https://fapiao.easyapi.com/console/signup">注册</a>
-                    </li>
-                    <li id="login">
-                        <a href="https://fapiao.easyapi.com/console/login">登录</a>
-                    </li>
-                    <li class="fa_console dis_hide" id="console">
-                        <a href="https://fapiao.easyapi.com/console/">控制台</a>
-                    </li>
-                    <li class="fa_avatar dis_hide" id="avatar">
-                        <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg">
-                        <div class="avatar_down">
-                            <div class="avatar_item" >
-                                <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="banner_content">
-                <p class="banner_title">丰富的解决方案，全方位满足你的需求</p>
-            </div>
+<!-- banner and header start-->
+<div class="fp_bd">
+  <div class="fp_width">
+    <div class="fp_head">
+      <ul class="fp_logo">
+        <li>
+          <a href="https://fapiao.easyapi.com/">
+            <img src="https://static.easyapi.com/images/market/logo.png">
+          </a>
+        </li>
+        <li>
+          <span>&nbsp;·&nbsp;</span>
+          <a href="index.html">
+            发票管理
+          </a>
+        </li>
+      </ul>
+      <ul class="fa_list" style="position:relative;">
+        <li>
+          <a href="index.html">首页</a>
+        </li>
+        <li>
+          <a href="guide.html">接入流程</a>
+        </li>
+        <li>
+          <a href="solution.html" class="big-text">解决方案</a>
+        </li>
+        <li>
+          <a href="together.html">渠道合作</a>
+        </li>
+        <li>
+          <a href="#" id="us">咨询联系</a>
+        </li>
+        <div class="contact_us" style="display:none;" id="contact_us_show">
+          <div class="trangle"></div>
+          <div>
+            <span class="contact_us_h3">联系电话</span> ：<span class="contact_us_color"> 0510-85180020</span> <br>
+            <span class="contact_us_h3">微信</span>：<span class="contact_us_color">13656171020 </span> <br>
+            <span class="contact_us_h3">QQ</span> ：<span class="contact_us_color">149151419 </span>
+          </div>
         </div>
+      </ul>
+      <ul class="fa_fr">
+        <li id="register">
+          <a href="https://fapiao.easyapi.com/console/signup">注册</a>
+        </li>
+        <li id="login">
+          <a href="https://fapiao.easyapi.com/console/login">登录</a>
+        </li>
+        <li class="fa_console dis_hide" id="console">
+          <a href="https://fapiao.easyapi.com/console/">控制台</a>
+        </li>
+        <li class="fa_avatar dis_hide" id="avatar">
+          <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg">
+          <div class="avatar_down">
+            <div class="avatar_item">
+              <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-    <!--  banber and header end -->
-    <!-- cnotent  start-->
-    <div class="advice_content" >
-        <div class="fp_width">
-            <div class="tabs">
-                <ul>
-                    <li class="lines tab" data-index='0'> 订单对接开票</li>
-                    <li class="tab" data-index='1'>扫码开票</li>
-                    <li class="tab" data-index='2'>自定义开票</li>
-                </ul>   
-            </div>
-            <div id="upOrder" style="display:block;">
-                <ul>
-                    <li>
-                        <h2 class="order_title">订单对接开票介绍</h2>
-                        <p class="text_left">结合订单支付流程，可随订单完成后开票，也可以打开订单列表，根据需求选择需要开票的订单，统一开票。</p>
-                        <p class="blue_text"> 
-                                适用于电商网站，在线服务，O2O等（无需进行开发对接）</p>
-                    </li>
-                    <li>
-                        <img src="images/pc/pic_invoice_solve_order.png" alt="">
-                    </li>
-                </ul>
-              
-            </div>
-            <div id="upScan" style="display:none;">
-                    <ul>
-                        <li>
-                            <h2 class="order_title">扫码开票介绍</h2>
-                            <p class="text_left">可与收银系统对接，用户支付完成后，商户提供含有开票二维码的购物小票，
-                                    用户使用微信扫码随时开取电子发票。</p>
-                            <p class="blue_text"> 
-                                    适用于连锁零售、商超、停车缴费、餐饮等</p>
-                        </li>
-                        <li>
-                            <img src="images/pc/pic_invoice_solve_sweep_QR.png" alt="">
-                        </li>
-                    </ul>
-            </div>
-            <div id="upOwn" style="display:none;">
-                    <ul>
-                        <li>
-                            <h2 class="order_title">自定义开票介绍</h2>
-                            <p class="text_left">用户在消费完成后，通过二维码打开开票申请页面，可以自定义金额，
-                                    或者自定义开票商品明细，提交后，后台可审核后进行开票。</p>
-                            <p class="blue_text"> 
-                                    适用于连锁家政服务、水站、教育服务等（无需进行开发对接）</p>
-                        </li>
-                        <li>
-                            <img src="images/pc/pic_invoice_solve_custom.png" alt="">
-                        </li>
-                    </ul>
-            </div>
-        </div>
+    <div class="banner_content">
+      <p class="banner_title">丰富的解决方案，全方位满足你的需求</p>
     </div>
-    <!-- product-status  end-->
-
-    <div class="cooperetion product_status" style="display:block;" id='orderId' >
-        <div class="fp_width">
-            <div class="a_title">
-                <span>方案演示：物流</span>
-            </div>
-            <div class="show">
-                <ul class="cooperetion_img">
-                    <li>
-                        <a href="#" target="_blank">
-                                <img src="images/pc/pic_invoice_solve_order_demo1.png"/>
-                        </a>
-                        <div class="text_center">
-                            <span class="number">1</span>
-                            <span class="text_color">用户打开公众号进入钱包页面</span>
-                        </div>
-    
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <img src="images/pc/pic_invoice_solve_order_demo2.png"/></a>
-                            <div class="text_center">
-                                <span class="number">2</span>
-                                <span class="text_color">用户进入发票申请页面选择并申请发票</span>
-                            </div>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                        <img src="images/pc/组 21.png"/></a>
-                        <div class="text_center">
-                            <span class="number">3</span>
-                            <span class="text_color">用户提交开票信息</span>
-                        </div>
-        
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                                <img src="images/pc/32.png"/></a>
-                            <div class="text_center">
-                                <span class="number">4</span>
-                                <span class="text_color">电子发票申请完毕</span>
-                            </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  </div>
+</div>
+<!--  banber and header end -->
+<!-- cnotent  start-->
+<div class="advice_content">
+  <div class="fp_width">
+    <div class="tabs">
+      <ul>
+        <li class="lines tab" data-index='0'> 订单对接开票</li>
+        <li class="tab" data-index='1'>扫码开票</li>
+        <li class="tab" data-index='2'>自定义开票</li>
+      </ul>
     </div>
-    <div class="cooperetion product_status" style="display:none;" id='scanId' >
-        <div class="fp_width">
-            <div class="a_title">
-                <span>方案演示：KFC</span>
-            </div>
-            <div class="show">
-                <ul class="kfc_img">
-                    <li style="padding-left:40px;">
-                        <a href="#" target="_blank">
-                            <img class="other_img" src="images/pc/pic_invoice_solve_sweep_demo1.png"/>
-                            <img class="other_img" style="    margin-top: 25px;" src="images/pc/8.png"/>
-                        </a>
-                            <div class="text-center" style="padding-top: 23px;padding-left: 84px;">
-                                <span class="number">1</span>
-                                <span class="text_color">消费后，获得带二维码的小票，用微信扫描该二维码</span>
-                            </div>
-                    </li>
-                    <li style="padding-left:160px;">
-                        <a href="#" target="_blank">
-                        <img src="images/pc/pic_invoice_solve_sweep_demo3.png"/></a>
-                        <div class="text_center" style="margin-left: 63px;">
-                            <span class="number">2</span>
-                            <span class="text_color">在商户页填写好发票抬头</span>
-                        </div>
-        
-                    </li>
-                    <li style="padding-left:80px;">
-                        <a href="#" target="_blank">
-                                <img src="images/pc/pic_invoice_solve_sweep_demo4.png"/></a>
-                            <div class="text_center">
-                                <span class="number">3</span>
-                                <span class="text_color">电子发票存入微信卡包</span>
-                            </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div id="upOrder" style="display:block;">
+      <ul>
+        <li>
+          <h2 class="order_title">订单对接开票介绍</h2>
+          <p class="text_left">结合订单支付流程，可随订单完成后开票，也可以打开订单列表，根据需求选择需要开票的订单，统一开票。</p>
+          <p class="blue_text">
+            适用于电商网站，在线服务，O2O等（无需进行开发对接）</p>
+        </li>
+        <li>
+          <img src="images/pc/pic_invoice_solve_order.png" alt="">
+        </li>
+      </ul>
+
     </div>
-    <div class="cooperetion product_status" style="display:none;" id='ownId' >
-            <div class="fp_width">
-                <div class="a_title">
-                    <span>方案演示：连锁水站</span>
-                </div>
-                <div class="show">
-                    <ul class="cooperetion_img">
-                        <li>
-                            <a href="#" target="_blank">
-                                    <img src="images/pc/pic_invoice_solve_custom_demo1.png"/>
-                            </a>
-                            <div class="text_center">
-                                <span class="number">1</span>
-                                <span class="text_color">用户进入开票页面</span>
-                            </div>
-        
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="images/pc/pic_invoice_solve_custom_demo2.png"/></a>
-                                <div class="text_center">
-                                    <span class="number">2</span>
-                                    <span class="text_color">填写开票信息</span>
-                                </div>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                            <img src="images/pc/组 22.png"/></a>
-                            <div class="text_center">
-                                <span class="number">3</span>
-                                <span class="text_color">添加发票内容</span>
-                            </div>
-            
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                    <img src="images/pc/组 23.png"/></a>
-                                <div class="text_center">
-                                    <span class="number">4</span>
-                                    <span class="text_color">提交电子发票申请</span>
-                                </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div id="upScan" style="display:none;">
+      <ul>
+        <li>
+          <h2 class="order_title">扫码开票介绍</h2>
+          <p class="text_left">可与收银系统对接，用户支付完成后，商户提供含有开票二维码的购物小票，
+            用户使用微信扫码随时开取电子发票。</p>
+          <p class="blue_text">
+            适用于连锁零售、商超、停车缴费、餐饮等</p>
+        </li>
+        <li>
+          <img src="images/pc/pic_invoice_solve_sweep_QR.png" alt="">
+        </li>
+      </ul>
     </div>
-  
+    <div id="upOwn" style="display:none;">
+      <ul>
+        <li>
+          <h2 class="order_title">自定义开票介绍</h2>
+          <p class="text_left">用户在消费完成后，通过二维码打开开票申请页面，可以自定义金额，
+            或者自定义开票商品明细，提交后，后台可审核后进行开票。</p>
+          <p class="blue_text">
+            适用于连锁家政服务、水站、教育服务等（无需进行开发对接）</p>
+        </li>
+        <li>
+          <img src="images/pc/pic_invoice_solve_custom.png" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- product-status  end-->
 
-    
+<div class="cooperetion product_status" style="display:block;" id='orderId'>
+  <div class="fp_width">
+    <div class="a_title">
+      <span>方案演示：物流</span>
+    </div>
+    <div class="show">
+      <ul class="cooperetion_img">
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/pc/pic_invoice_solve_order_demo1.png"/>
+          </a>
+          <div class="text_center">
+            <span class="number">1</span>
+            <span class="text_color">用户打开公众号进入钱包页面</span>
+          </div>
 
-    
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/pc/pic_invoice_solve_order_demo2.png"/></a>
+          <div class="text_center">
+            <span class="number">2</span>
+            <span class="text_color">用户进入发票申请页面选择并申请发票</span>
+          </div>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/pc/组 21.png"/></a>
+          <div class="text_center">
+            <span class="number">3</span>
+            <span class="text_color">用户提交开票信息</span>
+          </div>
 
-    
-    
-    
-        <div class="u-footer f-cb">
-            <p>
-                <a href="https://www.easyapi.com/info/about">关于我们</a>
-                <a href="https://www.easyapi.com/info/together">合作伙伴</a>
-                <a href="https://www.easyapi.com/info/contact">联系我们</a>
-                <a href="https://www.easyapi.com/info/donate">支持我们</a>
-            </p>
-            <p>Copyright © 2014～2019 上海帮趣网络技术有限公司</p>
-            <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
-        </div>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    
-        <script src="js/main.js"></script>
-        <script src="https://static.easyapi.com/scripts/meiqia.js"></script>
-        <script>
-            if($.cookie("fpAuthToken")){
-                $.ajax({
-                    method: 'GET',
-                    url: 'https://fapiao-api.easyapi.com/api/account',
-                    beforeSend: function (request) {
-                        request.setRequestHeader("Authorization", "Bearer " + $.cookie("fpAuthToken"));
-                    },
-                    success: function (data) {
-                        //$("#photo").attr("src", data.photo + "!icon.jpg");
-                        $("#avatar").removeClass('dis_hide');
-                        $("#login").addClass('dis_hide');
-                        $("#register").addClass('dis_hide');
-                        $("#console").removeClass('dis_hide');
-                    }
-                });
-                }
-        </script>
-        <script src="js/main.js"></script>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/pc/32.png"/></a>
+          <div class="text_center">
+            <span class="number">4</span>
+            <span class="text_color">电子发票申请完毕</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="cooperetion product_status" style="display:none;" id='scanId'>
+  <div class="fp_width">
+    <div class="a_title">
+      <span>方案演示：KFC</span>
+    </div>
+    <div class="show">
+      <ul class="kfc_img">
+        <li style="padding-left:40px;">
+          <a href="#" target="_blank">
+            <img class="other_img" src="images/pc/pic_invoice_solve_sweep_demo1.png"/>
+            <img class="other_img" style="    margin-top: 25px;" src="images/pc/8.png"/>
+          </a>
+          <div class="text-center" style="padding-top: 23px;padding-left: 84px;">
+            <span class="number">1</span>
+            <span class="text_color">消费后，获得带二维码的小票，用微信扫描该二维码</span>
+          </div>
+        </li>
+        <li style="padding-left:160px;">
+          <a href="#" target="_blank">
+            <img src="images/pc/pic_invoice_solve_sweep_demo3.png"/></a>
+          <div class="text_center" style="margin-left: 63px;">
+            <span class="number">2</span>
+            <span class="text_color">在商户页填写好发票抬头</span>
+          </div>
 
-        <script type="text/javascript">
-            var _hmt = _hmt || [];
-            (function() {
-                var hm = document.createElement("script");
-                hm.src = "//hm.baidu.com/hm.js?07b306be81dcbc23fd29affebc7b173e";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
+        </li>
+        <li style="padding-left:80px;">
+          <a href="#" target="_blank">
+            <img src="images/pc/pic_invoice_solve_sweep_demo4.png"/></a>
+          <div class="text_center">
+            <span class="number">3</span>
+            <span class="text_color">电子发票存入微信卡包</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="cooperetion product_status" style="display:none;" id='ownId'>
+  <div class="fp_width">
+    <div class="a_title">
+      <span>方案演示：连锁水站</span>
+    </div>
+    <div class="show">
+      <ul class="cooperetion_img">
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/pc/pic_invoice_solve_custom_demo1.png"/>
+          </a>
+          <div class="text_center">
+            <span class="number">1</span>
+            <span class="text_color">用户进入开票页面</span>
+          </div>
+
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/pc/pic_invoice_solve_custom_demo2.png"/></a>
+          <div class="text_center">
+            <span class="number">2</span>
+            <span class="text_color">填写开票信息</span>
+          </div>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/pc/组 22.png"/></a>
+          <div class="text_center">
+            <span class="number">3</span>
+            <span class="text_color">添加发票内容</span>
+          </div>
+
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/pc/组 23.png"/></a>
+          <div class="text_center">
+            <span class="number">4</span>
+            <span class="text_color">提交电子发票申请</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer f-cb">
+  <p>
+    <a href="https://www.easyapi.com/info/about">关于我们</a>
+    <a href="https://www.easyapi.com/info/together">合作伙伴</a>
+    <a href="https://www.easyapi.com/info/contact">联系我们</a>
+    <a href="https://www.easyapi.com/info/donate">支持我们</a>
+  </p>
+  <p>Copyright © 2014～2019 上海帮趣网络技术有限公司</p>
+  <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="https://static.easyapi.com/scripts/meiqia.js"></script>
+<script>
+  if ($.cookie("fpAuthToken")) {
+    $.ajax({
+      method: 'GET',
+      url: 'https://fapiao-api.easyapi.com/api/account',
+      beforeSend: function (request) {
+        request.setRequestHeader("Authorization", "Bearer " + $.cookie("fpAuthToken"));
+      },
+      success: function (data) {
+        //$("#photo").attr("src", data.photo + "!icon.jpg");
+        $("#avatar").removeClass('dis_hide');
+        $("#login").addClass('dis_hide');
+        $("#register").addClass('dis_hide');
+        $("#console").removeClass('dis_hide');
+      }
+    });
+  }
+</script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?07b306be81dcbc23fd29affebc7b173e";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
 </body>
 
 </html>

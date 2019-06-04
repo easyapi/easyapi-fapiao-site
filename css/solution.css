@@ -209,7 +209,7 @@
   width: 100%;
   height: 500px;
   text-align: center;
-  
+
 }
 .product_status {
   background-color: #f8f8f9;
@@ -331,11 +331,11 @@
 }
 #upOrder ul li:nth-child(1){
   padding-top: 20px;
-} 
+}
 #upOrder ul li:nth-child(2){
   /* padding-left: 200px; */
   height: 250px
-} 
+}
 #upOrder ul li p {
   font-size: 16px;
   margin-top: 20px;
@@ -363,11 +363,11 @@
 }
 #upScan ul li:nth-child(1){
   padding-top: 20px;
-} 
+}
 #upScan ul li:nth-child(2){
   /* padding-left: 200px; */
   height: 250px
-} 
+}
 #upScan ul li p {
   font-size: 16px;
   margin-top: 20px;
@@ -394,11 +394,11 @@
 }
 #upOwn ul li:nth-child(1){
   padding-top: 20px;
-} 
+}
 #upOwn ul li:nth-child(2){
   /* padding-left: 200px; */
   height: 250px
-} 
+}
 #upOwn ul li p {
   font-size: 16px;
   margin-top: 20px;
@@ -425,7 +425,7 @@
   width: 100%;
   float: left;
   margin-top: 20px;
-  
+
 }
 .cooperetion_img li{
   float: left;
@@ -451,13 +451,13 @@
   text-align: center;
   border-radius: 100%;
   border: 1px solid rgb(144,219,230);
-  
+
 }
 .kfc_img{
   width: 100%;
   float: left;
   margin-top: 20px;
-  
+
 }
 .kfc_img li{
   float: left;
@@ -486,7 +486,7 @@
   text-align: center;
   border-radius: 100%;
   border: 1px solid rgb(144,219,230);
-  
+
 }
 .text_center {
   margin: 0 auto;
@@ -511,7 +511,7 @@
 .relation_img{
   width: 100%;
   float: left;
-  
+
 }
 .relation_img li{
   float: left;
@@ -565,12 +565,12 @@
   margin-bottom: 0;
   background-size: cover;
 }
-.u-footer {
+.footer {
   text-align: center;
   background: white;
 
 }
-.u-footer a{
+.footer a{
   padding: 0 15px;
 }
 .banner_content{

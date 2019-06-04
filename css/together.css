@@ -244,7 +244,7 @@
 .statisfy_img{
   width: 100%;
   float: left;
-  
+
 }
 .statisfy_img li{
   float: left;
@@ -379,12 +379,12 @@
   margin-bottom: 0;
   background-size: cover;
 }
-.u-footer {
+.footer {
   text-align: center;
   background: white;
 
 }
-.u-footer a{
+.footer a{
   padding: 0 15px;
 }
 .banner_content{
