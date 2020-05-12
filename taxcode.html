@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>税收分类编码 - 发票管理 - EasyAPI场景化服务</title>
+  <link href="https://static.easyapi.com/css/site.min.css" rel="stylesheet"/>
+  <meta name="descriptions" content="EasyAPI发票管理是一个一站式发票管理平台，支持电子发票，纸质发票，轻松与您的产品无缝对接。"/>
+  <meta name="keywords" content="税收分类编码,申请发票API,发票管理,发票管理API,电子发票,电子发票API,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/taxcode.css">
+</head>
+
+<body>
+<!-- banner and header start-->
+<div class="fp_bd">
+  <div class="fp_width">
+    <div class="fp_head">
+      <ul class="fp_logo">
+        <li>
+          <a href="https://fapiao.easyapi.com/">
+            <img src="https://static.easyapi.com/images/market/logo.png">
+          </a>
+        </li>
+        <li>
+          <span>&nbsp;·&nbsp;</span>
+          <a href="index.html">
+            发票管理
+          </a>
+        </li>
+      </ul>
+      <ul class="fa_list" style="position:relative;">
+        <li>
+          <a href="index.html">首页</a>
+        </li>
+        <li>
+          <a href="guide.html">接入流程</a>
+        </li>
+        <li>
+          <a href="solution.html">解决方案</a>
+        </li>
+        <li>
+          <a href="together.html" class="big-text">渠道合作</a>
+        </li>
+        <li>
+          <a href="#" id="us">咨询联系</a>
+        </li>
+        <div class="contact_us" style="display:none;" id="contact_us_show">
+          <div class="trangle"></div>
+          <div>
+            <span class="contact_us_h3">联系电话</span> ：<span class="contact_us_color"> 0510-85180020</span> <br>
+            <span class="contact_us_h3">微信</span>：<span class="contact_us_color">13656171020 </span> <br>
+            <span class="contact_us_h3">QQ</span> ：<span class="contact_us_color">149151419 </span>
+          </div>
+        </div>
+      </ul>
+      <ul class="fa_fr">
+        <li id="register">
+          <a href="https://fapiao.easyapi.com/console/signup">注册</a>
+        </li>
+        <li id="login">
+          <a href="https://fapiao.easyapi.com/console/login">登录</a>
+        </li>
+        <li class="fa_console dis_hide" id="console">
+          <a href="https://fapiao.easyapi.com/console/">控制台</a>
+        </li>
+        <li class="fa_avatar dis_hide" id="avatar">
+          <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg">
+          <div class="avatar_down">
+            <div class="avatar_item">
+              <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--  banber and header end -->
+<div class="bd">
+    <span class="info_2">
+      税收编码查询
+    </span>
+    <div class="block_14">
+      <div class="block_9">
+        <div class="container">
+          <img
+            class="image"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="image"
+          />
+          <span class="txt_4">
+            货物
+          </span>
+        </div>
+        <div class="block_2">
+          <img
+            class="picture"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="picture"
+          />
+          <span class="word_4">
+            劳务
+          </span>
+        </div>
+        <div class="group">
+          <img
+            class="pic"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="pic"
+          />
+          <span class="text_2">
+            销售服务
+          </span>
+        </div>
+        <div class="container_2">
+          <img
+            class="icon"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="icon"
+          />
+          <span class="info_3">
+            交通运输服务
+          </span>
+        </div>
+        <div class="block_3">
+          <img
+            class="icon_2"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="icon_2"
+          />
+          <span class="info_4">
+            陆路运输服务
+          </span>
+        </div>
+        <div class="group_2">
+          <img
+            class="icon_3"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="icon_3"
+          />
+          <span class="info_5">
+            陆路旅客运输服务
+          </span>
+        </div>
+        <div class="container_3">
+          <img
+            class="icon_4"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="icon_4"
+          />
+          <span class="info_6">
+            铁路旅客运输服务
+          </span>
+        </div>
+        <span class="info_7">
+          国内铁路旅客运输服务
+        </span>
+        <span class="info_8">
+          国际铁路旅客运输服务
+        </span>
+        <span class="desc">
+          港澳台铁路旅客运输服务
+        </span>
+        <div class="block_4">
+          <img
+            class="img"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="img"
+          />
+          <span class="info_9">
+            道路旅客运输服务
+          </span>
+        </div>
+        <div class="group_3">
+          <img
+            class="image_2"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="image_2"
+          />
+          <span class="info_10">
+            陆路货物运输服务
+          </span>
+        </div>
+        <div class="container_5">
+          <div class="outer_2">
+            <div class="wrap">
+              <img
+                class="img_2"
+                src="./images/arrow_down.png"
+                data-src="./images/arrow_down.png"
+                alt="img_2"
+              />
+              <span class="info_11">
+                水路运输服务
+              </span>
+            </div>
+            <div class="block_5">
+              <img
+                class="image_3"
+                src="./images/arrow_down.png"
+                data-src="./images/arrow_down.png"
+                alt="image_3"
+              />
+              <span class="info_12">
+                航空运输服务
+              </span>
+            </div>
+            <div class="group_4">
+              <img
+                class="picture_2"
+                src="./images/arrow_down.png"
+                data-src="./images/arrow_down.png"
+                alt="picture_2"
+              />
+              <span class="info_13">
+                管道运输服务
+              </span>
+            </div>
+            <div class="container_4">
+              <img
+                class="pic_2"
+                src="./images/arrow_down.png"
+                data-src="./images/arrow_down.png"
+                alt="pic_2"
+              />
+              <span class="info_14">
+                无运输工具承运业务
+              </span>
+            </div>
+            <div class="outer">
+              <img
+                class="img_3"
+                src="./images/arrow_down.png"
+                data-src="./images/arrow_down.png"
+                alt="img_3"
+              />
+              <span class="word_5">
+                联运服务
+              </span>
+            </div>
+            <div class="wrap_2">
+              <img
+                class="image_4"
+                src="./images/arrow_down.png"
+                data-src="./images/arrow_down.png"
+                alt="image_4"
+              />
+              <span class="info_15">
+                其他运输服务
+              </span>
+            </div>
+          </div>
+          <div class="colorDiv"></div>
+        </div>
+        <div class="block_6">
+          <img
+            class="picture_3"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="picture_3"
+          />
+          <span class="txt_5">
+            邮政服务
+          </span>
+        </div>
+        <div class="group_5">
+          <img
+            class="pic_3"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="pic_3"
+          />
+          <span class="word_6">
+            电信服务
+          </span>
+        </div>
+        <div class="container_6">
+          <img
+            class="img_4"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="img_4"
+          />
+          <span class="text_3">
+            现代服务
+          </span>
+        </div>
+        <div class="block_7">
+          <img
+            class="image_5"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="image_5"
+          />
+          <span class="txt_6">
+            建筑服务
+          </span>
+        </div>
+        <div class="group_6">
+          <img
+            class="picture_4"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="picture_4"
+          />
+          <span class="word_7">
+            金融服务
+          </span>
+        </div>
+        <div class="container_7">
+          <img
+            class="pic_4"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="pic_4"
+          />
+          <span class="text_4">
+            生活服务
+          </span>
+        </div>
+        <div class="block_8">
+          <img
+            class="img_5"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="img_5"
+          />
+          <span class="txt_7">
+            无形资产
+          </span>
+        </div>
+        <div class="group_7">
+          <img
+            class="image_6"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="image_6"
+          />
+          <span class="word_8">
+            不动产
+          </span>
+        </div>
+        <div class="container_8">
+          <img
+            class="picture_5"
+            src="./images/arrow_down.png"
+            data-src="./images/arrow_down.png"
+            alt="picture_5"
+          />
+          <span class="desc_2">
+            未发生销售行为的不征税项目
+          </span>
+        </div>
+      </div>
+      <div class="group_12">
+        <div class="block_11">
+          <div class="block_10">
+            <img
+              class="icon_5"
+              src="./images/search.png"
+              data-src="./images/search.png"
+              alt="icon_5"
+            />
+            <span class="info_16">
+              请输入搜索名称
+            </span>
+          </div>
+          <div class="group_8">
+            <span class="txt_8">
+              搜索
+            </span>
+          </div>
+        </div>
+        <div class="group_11">
+          <div class="color"></div>
+          <div class="colorDiv_2"></div>
+          <div class="color_2"></div>
+          <div class="container_9">
+            <span class="info_17">
+              税收分类编码
+            </span>
+            <span class="info_18">
+              税收分类名称
+            </span>
+            <span class="txt_9">
+              增值税税率
+            </span>
+            <span class="info_19">
+              增值税特殊管理
+            </span>
+            <span class="info_20">
+              增值税政策依据
+            </span>
+            <span class="txt_10">
+              关键字
+            </span>
+          </div>
+          <div class="outer_3">
+            <span class="num">
+              3010201010000000000
+            </span>
+            <span class="info_21">
+              国内水路旅客运输服务
+            </span>
+            <div class="color_3"></div>
+            <div class="colorDiv_3"></div>
+            <span class="summary">
+              《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
+            </span>
+            <span class="desc_3">
+              国内水路旅客运输、轮客渡
+            </span>
+          </div>
+          <div class="block_12">
+            <span class="num_2">
+              3010201010000000000
+            </span>
+            <span class="info_22">
+              国内水路旅客运输服务
+            </span>
+            <div class="color_4"></div>
+            <div class="colorDiv_4"></div>
+            <span class="summary_2">
+              《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
+            </span>
+            <span class="desc_4">
+              国内水路旅客运输、轮客渡
+            </span>
+          </div>
+          <div class="group_9">
+            <span class="num_3">
+              3010201010000000000
+            </span>
+            <span class="info_23">
+              国内水路旅客运输服务
+            </span>
+            <div class="color_5"></div>
+            <div class="colorDiv_5"></div>
+            <span class="summary_3">
+              《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
+            </span>
+            <span class="desc_5">
+              国内水路旅客运输、轮客渡
+            </span>
+          </div>
+          <div class="colorDiv_6"></div>
+          <span class="summary_4">
+            《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
+          </span>
+          <div class="container_10">
+            <span class="num_4">
+              3010201010000000000
+            </span>
+            <span class="info_24">
+              国内水路旅客运输服务
+            </span>
+            <div class="color_6"></div>
+            <div class="colorDiv_7"></div>
+            <span class="desc_6">
+              国内水路旅客运输、轮客渡
+            </span>
+          </div>
+          <div class="color_7"></div>
+          <div class="colorDiv_8"></div>
+          <span class="summary_5">
+            《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
+          </span>
+          <div class="outer_4">
+            <span class="num_5">
+              3010201010000000000
+            </span>
+            <span class="info_25">
+              国内水路旅客运输服务
+            </span>
+            <div class="color_8"></div>
+            <div class="colorDiv_9"></div>
+            <span class="desc_7">
+              国内水路旅客运输、轮客渡
+            </span>
+          </div>
+          <div class="block_13">
+            <span class="num_6">
+              3010201010000000000
+            </span>
+            <span class="info_26">
+              国内水路旅客运输服务
+            </span>
+            <div class="color_9"></div>
+            <div class="colorDiv_10"></div>
+            <span class="summary_6">
+              《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
+            </span>
+            <span class="desc_8">
+              国内水路旅客运输、轮客渡
+            </span>
+          </div>
+          <div class="group_10">
+            <span class="num_7">
+              3010201010000000000
+            </span>
+            <span class="info_27">
+              国内水路旅客运输服务
+            </span>
+            <div class="color_10"></div>
+            <div class="colorDiv_11"></div>
+            <span class="summary_7">
+              《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
+            </span>
+            <span class="desc_9">
+              国内水路旅客运输、轮客渡
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="summary_8">
+      《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
+    </span>
+    <div class="color_11"></div>
+  </div>
+
+
+<div class="footer f-cb">
+  <p>
+    <a href="https://www.easyapi.com/info/about">关于我们</a>
+    <a href="https://www.easyapi.com/info/together">合作伙伴</a>
+    <a href="https://www.easyapi.com/info/contact">联系我们</a>
+    <a href="https://www.easyapi.com/info/donate">支持我们</a>
+  </p>
+  <p>Copyright © 2014～2020 上海帮趣网络技术有限公司</p>
+  <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<script>
+  if ($.cookie("fpAuthToken")) {
+    $.ajax({
+      method: 'GET',
+      url: 'https://fapiao-api.easyapi.com/api/account',
+      beforeSend: function (request) {
+        request.setRequestHeader("Authorization", "Bearer " + ($.cookie("fpAuthToken"));
+      },
+      success: function (data) {
+        //$("#photo").attr("src", data.photo + "!icon.jpg");
+        $("#avatar").removeClass('dis_hide');
+        $("#login").addClass('dis_hide');
+        $("#register").addClass('dis_hide');
+        $("#console").removeClass('dis_hide');
+      }
+    });
+  }
+</script>
+<script src="https://static.easyapi.com/scripts/meiqia.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?07b306be81dcbc23fd29affebc7b173e";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+</body>
+
+</html>
