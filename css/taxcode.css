@@ -3,13 +3,21 @@
   height: 100%;
 }
 
+.cell{
+  font-size: 12px;
+}
+
+.el-table{
+  font-size: 12px;
+}
+
 .el-tree-node__content{
   margin: 5px;
 }
 
 .search{
   margin-right: 10px;
-  width: 765px;
+  width: 770px;
 }
 
 .fp_bd {
@@ -358,9 +366,10 @@
   align-items: flex-start;
   flex-direction: column;
   margin-right: 20px;
-  background-color: #ecf1f5;
+  background-color: white;
   width: 330px;
   height: 1095px;
+  overflow: auto;
 }
 
 .container {
@@ -1013,6 +1022,8 @@
 .block_11 {
   display: flex;
   position: relative;
+  top:-50px;
+  right: 0;
   align-items: center;
   flex-direction: row;
   height: 40px;
@@ -1065,13 +1076,13 @@
 }
 
 .group_11 {
-  display: flex;
   position: relative;
+  top:-50px;
   align-items: center;
   flex-direction: column;
   background-color: #ffffff;
   width: 850px;
-  height: 1035px;
+  height: 1095px;
   overflow-y: auto;
   margin-top: 10px;
 }

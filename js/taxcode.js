@@ -2,10 +2,11 @@ var app = new Vue({
   el: "#app",
   data() {
     return {
-      parentId:'',
+      parentId: '',
       treeData: [],
       listData: [],
       input: '',
+      loading:true,
       defaultProps: {
         children: 'children',
         label: 'name'
@@ -21,6 +22,7 @@ var app = new Vue({
         let data = res.data
         if (data.code == 1) {
           this.treeData = data.content
+          this.loading=false
         }
       })
     },
@@ -30,11 +32,12 @@ var app = new Vue({
         method: 'get',
         params: {
           q: this.input,
-          parentId: this.parentId
         }
       }).then(res => {
         if (res.data.code == 1) {
           this.listData = res.data.content
+        } else {
+          this.listData = []
         }
       })
     },
@@ -42,8 +45,9 @@ var app = new Vue({
       this.parentId = data.taxCodeId
       axios.get("https://api2.easyapi.com/tax-codes", {params: {parentId: data.taxCodeId}}).then(res => {
         console.log(res)
-        this.listData = res.data.content
-        console.log(this.listData);
+        if (res.data.code==1) {
+          this.listData = res.data.content
+        }
       })
     }
   }

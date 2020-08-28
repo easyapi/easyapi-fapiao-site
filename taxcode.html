@@ -86,13 +86,13 @@
     </span>
     <div class="block_14">
       <div class="block_9">
-        <el-tree :data="treeData" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
+          <el-tree v-loading="loading" element-loading-text="加载中" element-loading-background="white" :data="treeData" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
       </div>
 
       <div class="group_12">
         <div class="block_11">
           <div class="search">
-            <el-input v-model="input" placeholder="请输入内容"></el-input>
+            <el-input v-model="input" placeholder="请输入税收编码关键字" clearable></el-input>
           </div>
           <el-button  @input="change($event)" type="primary" @click="handSearch">搜索</el-button>
         </div>
@@ -115,7 +115,7 @@
             </el-table-column>
             <el-table-column
               prop="rate"
-              label="增值税税率">
+              label="增值税税率(%)">
             </el-table-column>
             <el-table-column
               prop="preferentialPolicyName"
@@ -130,205 +130,6 @@
               label="关键字">
             </el-table-column>
           </el-table>
-          <!--<div class="span"></div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="outer_3">-->
-            <!--<div class="inline">-->
-                <!--<span class="num">-->
-                <!--3010201010000000000-->
-                 <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输服务-->
-                <!--</span>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<div class="num">&#45;&#45;</div>-->
-              <!--<span class="num">-->
-                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
-                  <!--</span>-->
-              <!--<span class="num">-->
-                 <!--国内水路旅客运输、轮客渡-->
-                 <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
         </div>
       </div>
     </div>
