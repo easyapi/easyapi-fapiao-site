@@ -3,6 +3,8 @@ var app = new Vue({
   data() {
     return {
       treeData: [],
+      listData:[],
+      key:'',
       defaultProps: {
         children: 'children',
         label: 'name'
@@ -19,6 +21,18 @@ var app = new Vue({
         if (data.code == 1) {
           this.treeData = data.content
         }
+      })
+    },
+    handSearch(){
+      axios.get("https://api2.easyapi.com/tax-code/list",{params:}).then(res=>{
+
+      })
+    },
+    handleNodeClick(data) {
+      axios.get("https://api2.easyapi.com/tax-codes",{params:{parentId:data.taxCodeId}}).then(res=>{
+        console.log(res)
+        this.listData=res.data.content
+        console.log(this.listData);
       })
     }
   }

@@ -16,632 +16,340 @@
 </head>
 
 <body>
-<!-- banner and header start-->
-<div id="app" class="fp_bd">
-  <div class="fp_width">
-    <div class="fp_head">
-      <ul class="fp_logo">
-        <li>
-          <a href="https://fapiao.easyapi.com/">
-            <img src="https://static.easyapi.com/images/market/logo.png">
-          </a>
-        </li>
-        <li>
-          <span>&nbsp;·&nbsp;</span>
-          <a href="index.html">
-            发票管理
-          </a>
-        </li>
-      </ul>
-      <ul class="fa_list" style="position:relative;">
-        <li>
-          <a href="index.html">首页</a>
-        </li>
-        <li>
-          <a href="guide.html">接入流程</a>
-        </li>
-        <li>
-          <a href="solution.html">解决方案</a>
-        </li>
-        <li>
-          <a href="together.html" class="big-text">渠道合作</a>
-        </li>
-        <li>
-          <a href="#" id="us">咨询联系</a>
-        </li>
-        <div class="contact_us" style="display:none;" id="contact_us_show">
-          <div class="trangle"></div>
-          <div>
-            <span class="contact_us_h3">联系电话</span> ：<span class="contact_us_color"> 0510-85180020</span> <br>
-            <span class="contact_us_h3">微信</span>：<span class="contact_us_color">13656171020 </span> <br>
-            <span class="contact_us_h3">QQ</span> ：<span class="contact_us_color">149151419 </span>
-          </div>
-        </div>
-      </ul>
-      <ul class="fa_fr">
-        <li id="register">
-          <a href="https://fapiao.easyapi.com/console/signup">注册</a>
-        </li>
-        <li id="login">
-          <a href="https://fapiao.easyapi.com/console/login">登录</a>
-        </li>
-        <li class="fa_console dis_hide" id="console">
-          <a href="https://fapiao.easyapi.com/console/">控制台</a>
-        </li>
-        <li class="fa_avatar dis_hide" id="avatar">
-          <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg">
-          <div class="avatar_down">
-            <div class="avatar_item">
-              <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
+<div id="app">
+  <div class="fp_bd">
+    <div class="fp_width">
+      <div class="fp_head">
+        <ul class="fp_logo">
+          <li>
+            <a href="https://fapiao.easyapi.com/">
+              <img src="https://static.easyapi.com/images/market/logo.png">
+            </a>
+          </li>
+          <li>
+            <span>&nbsp;·&nbsp;</span>
+            <a href="index.html">
+              发票管理
+            </a>
+          </li>
+        </ul>
+        <ul class="fa_list" style="position:relative;">
+          <li>
+            <a href="index.html">首页</a>
+          </li>
+          <li>
+            <a href="guide.html">接入流程</a>
+          </li>
+          <li>
+            <a href="solution.html">解决方案</a>
+          </li>
+          <li>
+            <a href="together.html" class="big-text">渠道合作</a>
+          </li>
+          <li>
+            <a href="#" id="us">咨询联系</a>
+          </li>
+          <div class="contact_us" style="display:none;" id="contact_us_show">
+            <div class="trangle"></div>
+            <div>
+              <span class="contact_us_h3">联系电话</span> ：<span class="contact_us_color"> 0510-85180020</span> <br>
+              <span class="contact_us_h3">微信</span>：<span class="contact_us_color">13656171020 </span> <br>
+              <span class="contact_us_h3">QQ</span> ：<span class="contact_us_color">149151419 </span>
             </div>
           </div>
-        </li>
-      </ul>
+        </ul>
+        <ul class="fa_fr">
+          <li id="register">
+            <a href="https://fapiao.easyapi.com/console/signup">注册</a>
+          </li>
+          <li id="login">
+            <a href="https://fapiao.easyapi.com/console/login">登录</a>
+          </li>
+          <li class="fa_console dis_hide" id="console">
+            <a href="https://fapiao.easyapi.com/console/">控制台</a>
+          </li>
+          <li class="fa_avatar dis_hide" id="avatar">
+            <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg">
+            <div class="avatar_down">
+              <div class="avatar_item">
+                <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-<!--  banber and header end -->
-<!--    bd  下部分-->
-<!--block_9 左侧导航栏-->
-<!--    container 下部分左侧导航栏1级  margin-left: 20px;-->
-<!--    container_2  2级导航 margin-left: 33px;-->
-<!--block_3  3级导航 margin-left: 49px;-->
-<!--group_2  4级导航 margin-left: 65px;-->
-<!--container_3 5级导航 margin-left: 80px;-->
-<!--info_7 6级导航 margin-left: 113px;-->
-<div class="bd">
+  <div class="bd">
     <span class="info_2">
       税收编码查询
     </span>
     <div class="block_14">
       <div class="block_9">
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="image"-->
-          <!--/>-->
-          <!--<span class="txt_4">-->
-
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="picture"-->
-          <!--/>-->
-          <!--<span class="word_4">-->
-            <!--劳务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="pic"-->
-          <!--/>-->
-          <!--<span class="text_2">-->
-            <!--销售服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container_2">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="icon"-->
-          <!--/>-->
-          <!--<span class="info_3">-->
-            <!--交通运输服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="block_3">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="icon_2"-->
-          <!--/>-->
-          <!--<span class="info_4">-->
-            <!--陆路运输服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="group_2">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="icon_3"-->
-          <!--/>-->
-          <!--<span class="info_5">-->
-            <!--陆路旅客运输服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container_3">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="icon_4"-->
-          <!--/>-->
-          <!--<span class="info_6">-->
-            <!--铁路旅客运输服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<span class="info_7">-->
-          <!--国内铁路旅客运输服务-->
-        <!--</span>-->
-        <!--<span class="info_7">-->
-          <!--国际铁路旅客运输服务-->
-        <!--</span>-->
-        <!--<span class="info_7">-->
-          <!--港澳台铁路旅客运输服务-->
-        <!--</span>-->
-        <!--<div class="block_4">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="img"-->
-          <!--/>-->
-          <!--<span class="info_6">-->
-            <!--道路旅客运输服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="group_3">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="image_2"-->
-          <!--/>-->
-          <!--<span class="info_5">-->
-            <!--陆路货物运输服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container_5">-->
-          <!--<div class="outer_2">-->
-            <!--<div class="block_3">-->
-              <!--<img-->
-                <!--class="icon"-->
-                <!--src="./images/arrow_down.png"-->
-                <!--data-src="./images/arrow_down.png"-->
-                <!--alt="img_2"-->
-              <!--/>-->
-              <!--<span class="info_4">-->
-                <!--水路运输服务-->
-              <!--</span>-->
-            <!--</div>-->
-            <!--<div class="block_3">-->
-              <!--<img-->
-                <!--class="icon"-->
-                <!--src="./images/arrow_down.png"-->
-                <!--data-src="./images/arrow_down.png"-->
-                <!--alt="image_3"-->
-              <!--/>-->
-              <!--<span class="info_4">-->
-                <!--航空运输服务-->
-              <!--</span>-->
-            <!--</div>-->
-            <!--<div class="block_3">-->
-              <!--<img-->
-                <!--class="icon"-->
-                <!--src="./images/arrow_down.png"-->
-                <!--data-src="./images/arrow_down.png"-->
-                <!--alt="picture_2"-->
-              <!--/>-->
-              <!--<span class="info_13">-->
-                <!--管道运输服务-->
-              <!--</span>-->
-            <!--</div>-->
-            <!--<div class="block_3">-->
-              <!--<img-->
-                <!--class="icon"-->
-                <!--src="./images/arrow_down.png"-->
-                <!--data-src="./images/arrow_down.png"-->
-                <!--alt="pic_2"-->
-              <!--/>-->
-              <!--<span class="info_14">-->
-                <!--无运输工具承运业务-->
-              <!--</span>-->
-            <!--</div>-->
-            <!--<div class="block_3">-->
-              <!--<img-->
-                <!--class="icon"-->
-                <!--src="./images/arrow_down.png"-->
-                <!--data-src="./images/arrow_down.png"-->
-                <!--alt="img_3"-->
-              <!--/>-->
-              <!--<span class="word_5">-->
-                <!--联运服务-->
-              <!--</span>-->
-            <!--</div>-->
-            <!--<div class="block_3">-->
-              <!--<img-->
-                <!--class="icon"-->
-                <!--src="./images/arrow_down.png"-->
-                <!--data-src="./images/arrow_down.png"-->
-                <!--alt="image_4"-->
-              <!--/>-->
-              <!--<span class="info_15">-->
-                <!--其他运输服务-->
-              <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-<!--&lt;!&ndash;          <div class="colorDiv"></div>&ndash;&gt;-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="picture_3"-->
-          <!--/>-->
-          <!--<span class="txt_5">-->
-            <!--邮政服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="pic_3"-->
-          <!--/>-->
-          <!--<span class="word_6">-->
-            <!--电信服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="img_4"-->
-          <!--/>-->
-          <!--<span class="text_3">-->
-            <!--现代服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="image_5"-->
-          <!--/>-->
-          <!--<span class="txt_6">-->
-            <!--建筑服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="picture_4"-->
-          <!--/>-->
-          <!--<span class="word_7">-->
-            <!--金融服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="pic_4"-->
-          <!--/>-->
-          <!--<span class="text_4">-->
-            <!--生活服务-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="img_5"-->
-          <!--/>-->
-          <!--<span class="txt_7">-->
-            <!--无形资产-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="image_6"-->
-          <!--/>-->
-          <!--<span class="word_8">-->
-            <!--不动产-->
-          <!--</span>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-          <!--<img-->
-            <!--class="icon"-->
-            <!--src="./images/arrow_down.png"-->
-            <!--data-src="./images/arrow_down.png"-->
-            <!--alt="picture_5"-->
-          <!--/>-->
-          <!--<span class="desc_2">-->
-            <!--未发生销售行为的不征税项目-->
-          <!--</span>-->
-        <!--</div>-->
         <el-tree :data="treeData" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
       </div>
 
       <div class="group_12">
         <div class="block_11">
-          <div class="block_10">
-            <img
-              class="icon_5"
-              src="./images/search.png"
-              data-src="./images/search.png"
-              alt="icon_5"
-            />
-            <span class="info_16">
-              请输入搜索名称
-            </span>
+          <div class="search">
+            <el-input placeholder="请输入内容"></el-input>
           </div>
-          <div class="group_8">
-            <span class="txt_8">
-              搜索
-            </span>
-          </div>
+          <el-button v-model="key" type="primary" @click="handSearch">搜索</el-button>
         </div>
-<!--        <div class="colorDiv_8"></div> 右侧滑框-->
-<!--        colorDiv_6  下框线-->
-<!--            group_11 加入overflow-y：auto后   下框线失效-->
+        <!--        <div class="colorDiv_8"></div> 右侧滑框-->
+        <!--        colorDiv_6  下框线-->
+        <!--            group_11 加入overflow-y：auto后   下框线失效-->
         <div class="group_11">
-<!--          <div class="color"></div>-->
-<!--          <div class="colorDiv_2"></div>-->
-<!--          <div class="color_2"></div>-->
-          <div class="container_9">
-            <span class="info_17">
-              税收分类编码
-            </span>
-            <span class="info_17">
-              税收分类名称
-            </span>
-            <span class="info_17">
-              增值税税率
-            </span>
-            <span class="info_17">
-              增值税特殊管理
-            </span>
-            <span class="info_17">
-              增值税政策依据
-            </span>
-            <span class="info_17">
-              关键字
-            </span>
-          </div>
-          <div class="span"></div>
-          <div class="outer_3">
-              <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-                <span class="num">
-                 国内水路旅客运输服务
-                </span>
-                <div class="num">--</div>
-                <div class="num">--</div>
-                <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-                <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-              </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
-          <div class="outer_3">
-            <div class="inline">
-                <span class="num">
-                3010201010000000000
-                 </span>
-              <span class="num">
-                 国内水路旅客运输服务
-                </span>
-              <div class="num">--</div>
-              <div class="num">--</div>
-              <span class="num">
-                  《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）
-                  </span>
-              <span class="num">
-                 国内水路旅客运输、轮客渡
-                 </span>
-            </div>
-          </div>
+          <el-table
+            :data="listData"
+            style="width: 100%">
+            <el-table-column
+              prop="code"
+              label="税收分类编码"
+              width="180">
+            </el-table-column>
+            <el-table-column
+              prop="name"
+              label="税收分类名称"
+              width="180">
+            </el-table-column>
+            <el-table-column
+              prop="rate"
+              label="增值税税率">
+            </el-table-column>
+            <el-table-column
+              prop="preferentialPolicyName"
+              label="增值税特殊管理">
+            </el-table-column>
+            <el-table-column
+              prop="address"
+              label="增值税政策依据">
+            </el-table-column>
+            <el-table-column
+              prop="shortName"
+              label="关键字">
+            </el-table-column>
+          </el-table>
+          <!--<div class="span"></div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="outer_3">-->
+            <!--<div class="inline">-->
+                <!--<span class="num">-->
+                <!--3010201010000000000-->
+                 <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输服务-->
+                <!--</span>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<div class="num">&#45;&#45;</div>-->
+              <!--<span class="num">-->
+                  <!--《财政部 国家税务总局关于将铁路运输和邮政业纳入营业税改征增值税试点的通知》（财税〔2013〕106号）-->
+                  <!--</span>-->
+              <!--<span class="num">-->
+                 <!--国内水路旅客运输、轮客渡-->
+                 <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
         </div>
       </div>
     </div>
-
-<!--    <div class="color_11"></div>-->
   </div>
-
-
-<div class="footer f-cb">
-  <p>
-    <a href="https://www.easyapi.com/info/about">关于我们</a>
-    <a href="https://www.easyapi.com/info/together">合作伙伴</a>
-    <a href="https://www.easyapi.com/info/contact">联系我们</a>
-    <a href="https://www.easyapi.com/info/donate">支持我们</a>
-  </p>
-  <p>Copyright © 2014～2020 上海帮趣网络技术有限公司</p>
-  <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
+  <div class="footer f-cb">
+    <p>
+      <a href="https://www.easyapi.com/info/about">关于我们</a>
+      <a href="https://www.easyapi.com/info/together">合作伙伴</a>
+      <a href="https://www.easyapi.com/info/contact">联系我们</a>
+      <a href="https://www.easyapi.com/info/donate">支持我们</a>
+    </p>
+    <p>Copyright © 2014～2020 上海帮趣网络技术有限公司</p>
+    <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
+  </div>
 </div>
+<!-- banner and header start-->
+
 
 <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
 <script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+-
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script src="js/taxcode.js"></script>
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
