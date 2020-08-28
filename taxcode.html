@@ -92,9 +92,9 @@
       <div class="group_12">
         <div class="block_11">
           <div class="search">
-            <el-input placeholder="请输入内容"></el-input>
+            <el-input v-model="input" placeholder="请输入内容"></el-input>
           </div>
-          <el-button v-model="key" type="primary" @click="handSearch">搜索</el-button>
+          <el-button  @input="change($event)" type="primary" @click="handSearch">搜索</el-button>
         </div>
         <!--        <div class="colorDiv_8"></div> 右侧滑框-->
         <!--        colorDiv_6  下框线-->
