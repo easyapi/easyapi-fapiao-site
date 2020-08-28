@@ -8,13 +8,10 @@
   <meta name="descriptions" content="EasyAPI发票管理是一个一站式发票管理平台，支持电子发票，纸质发票，轻松与您的产品无缝对接。"/>
   <meta name="keywords" content="税收分类编码,申请发票API,发票管理,发票管理API,电子发票,电子发票API,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/taxcode.css">
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
-
 <body>
 <div id="app">
   <div class="fp_bd">
@@ -31,50 +28,6 @@
             <a href="index.html">
               发票管理
             </a>
-          </li>
-        </ul>
-        <ul class="fa_list" style="position:relative;">
-          <li>
-            <a href="index.html">首页</a>
-          </li>
-          <li>
-            <a href="guide.html">接入流程</a>
-          </li>
-          <li>
-            <a href="solution.html">解决方案</a>
-          </li>
-          <li>
-            <a href="together.html" class="big-text">渠道合作</a>
-          </li>
-          <li>
-            <a href="#" id="us">咨询联系</a>
-          </li>
-          <div class="contact_us" style="display:none;" id="contact_us_show">
-            <div class="trangle"></div>
-            <div>
-              <span class="contact_us_h3">联系电话</span> ：<span class="contact_us_color"> 0510-85180020</span> <br>
-              <span class="contact_us_h3">微信</span>：<span class="contact_us_color">13656171020 </span> <br>
-              <span class="contact_us_h3">QQ</span> ：<span class="contact_us_color">149151419 </span>
-            </div>
-          </div>
-        </ul>
-        <ul class="fa_fr">
-          <li id="register">
-            <a href="https://fapiao.easyapi.com/console/signup">注册</a>
-          </li>
-          <li id="login">
-            <a href="https://fapiao.easyapi.com/console/login">登录</a>
-          </li>
-          <li class="fa_console dis_hide" id="console">
-            <a href="https://fapiao.easyapi.com/console/">控制台</a>
-          </li>
-          <li class="fa_avatar dis_hide" id="avatar">
-            <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg">
-            <div class="avatar_down">
-              <div class="avatar_item">
-                <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
-              </div>
-            </div>
           </li>
         </ul>
       </div>
@@ -96,9 +49,6 @@
           </div>
           <el-button  @input="change($event)" type="primary" @click="handSearch">搜索</el-button>
         </div>
-        <!--        <div class="colorDiv_8"></div> 右侧滑框-->
-        <!--        colorDiv_6  下框线-->
-        <!--            group_11 加入overflow-y：auto后   下框线失效-->
         <div class="group_11">
           <el-table
             :data="listData"
@@ -153,40 +103,7 @@
 -
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script src="js/taxcode.js"></script>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
-<script>
-  if ($.cookie("fpAuthToken")) {
-    $.ajax({
-      method: 'GET',
-      url: 'https://fapiao-api.easyapi.com/api/account',
-      beforeSend: function (request) {
-        request.setRequestHeader("Authorization", "Bearer " + ($.cookie("fpAuthToken")));
-      },
-      success: function (data) {
-        //$("#photo").attr("src", data.photo + "!icon.jpg");
-        $("#avatar").removeClass('dis_hide');
-        $("#login").addClass('dis_hide');
-        $("#register").addClass('dis_hide');
-        $("#console").removeClass('dis_hide');
-      }
-    });
-  }
-</script>
-<script src="https://static.easyapi.com/scripts/meiqia.js"></script>
-<script src="js/main.js"></script>
-
-<script type="text/javascript">
-  var _hmt = _hmt || [];
-  (function () {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?07b306be81dcbc23fd29affebc7b173e";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script>
 </body>
 
 </html>

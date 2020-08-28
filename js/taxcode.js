@@ -44,7 +44,6 @@ var app = new Vue({
     handleNodeClick(data) {
       this.parentId = data.taxCodeId
       axios.get("https://api2.easyapi.com/tax-codes", {params: {parentId: data.taxCodeId}}).then(res => {
-        console.log(res)
         if (res.data.code==1) {
           this.listData = res.data.content
         }
