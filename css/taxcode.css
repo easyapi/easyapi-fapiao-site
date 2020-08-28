@@ -1022,7 +1022,6 @@
 .block_11 {
   display: flex;
   position: relative;
-  top:-50px;
   right: 0;
   align-items: center;
   flex-direction: row;
@@ -1077,7 +1076,6 @@
 
 .group_11 {
   position: relative;
-  top:-50px;
   align-items: center;
   flex-direction: column;
   background-color: #ffffff;
