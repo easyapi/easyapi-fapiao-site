@@ -11,7 +11,6 @@
   font-size: 14px;
   padding: 15px;
   box-sizing: border-box;
-
 }
 .contact_us ::before {
   content: '',
@@ -32,3 +31,49 @@
   top: -20px;
   left: 42px;
 }
+.launcher{
+  cursor: pointer;
+  z-index: 2147483000!important;
+  position: fixed!important;
+  bottom: 20px;
+  right: 20px;
+  width: 60px!important;
+  height: 60px!important;
+  border-radius: 50%!important;
+  background: #409EFF;
+}
+.launcher-close-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.Launcher-img{
+  width: 26px!important;
+  max-width: 26px!important;
+  min-width: 26px!important;
+  min-height: 26px!important;
+  max-height: 26px!important;
+  height: 26px!important;
+}
+#closeImg{
+  display: none;
+}
+#telephone{
+  width: 215px;
+  height: 85px;
+  background-color: #409EFF;
+  border-radius: 4px;
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  z-index: 3333;
+  font-size: 14px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: none;
+}
+
