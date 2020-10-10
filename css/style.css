@@ -1,11 +1,11 @@
 /* 联系我们 */
 .contact_us {
-  width: 215px;
-  height: 85px;
+  width: 403px;
+  height: 300px;
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
-  right: -65px;
+  right: -260px;
   top: 60px;
   z-index: 3333;
   font-size: 14px;
