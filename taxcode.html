@@ -39,7 +39,8 @@
     </span>
     <div class="block_14">
       <div class="block_9">
-          <el-tree v-loading="loading" element-loading-text="加载中" element-loading-background="white" :data="treeData" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
+        <el-tree v-loading="loading" element-loading-text="加载中" element-loading-background="white" :data="treeData"
+                 :props="defaultProps" @node-click="handleNodeClick"></el-tree>
       </div>
 
       <div class="group_12">
@@ -47,7 +48,7 @@
           <div class="search">
             <el-input v-model="input" placeholder="请输入税收编码关键字" clearable></el-input>
           </div>
-          <el-button  @input="change($event)" type="primary" @click="handSearch">搜索</el-button>
+          <el-button @input="change($event)" type="primary" @click="handSearch">搜索</el-button>
         </div>
         <div class="group_11">
           <el-table

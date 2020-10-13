@@ -1,7 +1,7 @@
 /* 联系我们 */
 .contact_us {
-  width: 403px;
-  height: 300px;
+  width: 438px;
+  height: 400px;
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
@@ -12,37 +12,53 @@
   padding: 15px;
   box-sizing: border-box;
 }
+
 .contact_us ::before {
-  content: '',
+  content: ''
 }
+
+.contact_us_line {
+  margin: 10px 0 10px 0;
+}
+
 .contact_us_h3 {
   font-weight: bold;
+  margin-bottom: 10px;
 }
+
+.contact_us img {
+  width: 118px;
+  height: 118px;
+}
+
 .contact_us_color {
-  color: rgb(103,103,103)
+  color: rgb(103, 103, 103)
 }
+
 .trangle {
-  width:0;
-  border-top:10px solid transparent;
-  border-bottom:10px solid #fff;
-  border-left:10px solid transparent;
-  border-right:10px solid transparent;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
   position: absolute;
   top: -20px;
   left: 42px;
 }
-.launcher{
+
+.launcher {
   cursor: pointer;
-  z-index: 2147483000!important;
-  position: fixed!important;
+  z-index: 2147483000 !important;
+  position: fixed !important;
   bottom: 20px;
   right: 20px;
-  width: 60px!important;
-  height: 60px!important;
-  border-radius: 50%!important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
   background: #409EFF;
 }
-.launcher-close-icon{
+
+.launcher-close-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,21 +67,24 @@
   bottom: 0;
   width: 100%;
 }
-.Launcher-img{
-  width: 26px!important;
-  max-width: 26px!important;
-  min-width: 26px!important;
-  min-height: 26px!important;
-  max-height: 26px!important;
-  height: 26px!important;
+
+.Launcher-img {
+  width: 26px !important;
+  max-width: 26px !important;
+  min-width: 26px !important;
+  min-height: 26px !important;
+  max-height: 26px !important;
+  height: 26px !important;
 }
-#closeImg{
+
+#closeImg {
   display: none;
 }
-#telephone{
-  width: 215px;
-  height: 85px;
-  background-color: #409EFF;
+
+#telephone {
+  width: 438px;
+  height: 400px;
+  background-color: #f0f0f2;
   border-radius: 4px;
   position: fixed;
   right: 20px;
@@ -75,5 +94,10 @@
   padding: 15px;
   box-sizing: border-box;
   display: none;
+}
+
+#telephone img {
+  width: 120px;
+  height: 120px;
 }
 
