@@ -18,7 +18,7 @@ var app = new Vue({
   },
   methods: {
     getTree() {
-      axios.get("https://api2.easyapi.com/tax-code/tree").then(res => {
+      axios.get("https://api.easyapi.com/tax-code/tree").then(res => {
         let data = res.data
         if (data.code == 1) {
           this.treeData = data.content
@@ -28,7 +28,7 @@ var app = new Vue({
     },
     handSearch() {
       axios({
-        url: 'https://api2.easyapi.com/tax-codes',
+        url: 'https://api.easyapi.com/tax-codes',
         method: 'get',
         params: {
           q: this.input,
@@ -43,7 +43,7 @@ var app = new Vue({
     },
     handleNodeClick(data) {
       this.parentId = data.taxCodeId
-      axios.get("https://api2.easyapi.com/tax-codes", {params: {parentId: data.taxCodeId}}).then(res => {
+      axios.get("https://api.easyapi.com/tax-codes", {params: {parentId: data.taxCodeId}}).then(res => {
         if (res.data.code==1) {
           this.listData = res.data.content
         }
