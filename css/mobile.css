@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	display: inline-block;
@@ -27,7 +27,7 @@ time, mark, audio, video {
 	word-break: break-all;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -65,7 +65,7 @@ a{
 }
 
 .g_flex_c{
-	
+
 }
 
 .g_flex_c_center {
@@ -195,7 +195,7 @@ a{
 	height: 2px;
 	background-color: #fff;
 	transform: translate(0,-50%);
-}	
+}
 
 
 .menu_btn ul {
@@ -375,7 +375,7 @@ a{
 
 .main_hf_wi img {
 	display: block;
-	min-width: 180px; 
+	min-width: 180px;
 }
 
 .main_home_target {
@@ -682,19 +682,19 @@ a{
 
 .main_prcl_item span.num1 {
 	background-image: url(../images/mobile/ic_invoice_cooperation_flow1.png);
-} 
+}
 
 .main_prcl_item span.num2 {
 	background-image: url(../images/mobile/ic_invoice_cooperation_flow2.png);
-} 
+}
 
 .main_prcl_item span.num3 {
 	background-image: url(../images/mobile/ic_invoice_cooperation_flow3.png);
-} 
+}
 
 .main_prcl_item span.num4 {
 	background-image: url(../images/mobile/ic_invoice_cooperation_flow4.png);
-} 
+}
 
 /*接入流程*/
 
