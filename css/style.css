@@ -5,7 +5,7 @@
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
-  right: -260px;
+  right: -190px;
   top: 60px;
   z-index: 3333;
   font-size: 14px;
@@ -29,6 +29,7 @@
 .contact_us img {
   width: 118px;
   height: 118px;
+  margin-right: 10px;
 }
 
 .contact_us_color {
@@ -84,7 +85,8 @@
 #telephone {
   width: 438px;
   height: 400px;
-  background-color: #f0f0f2;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px 0 #ebeef5;
   border-radius: 4px;
   position: fixed;
   right: 20px;
@@ -97,7 +99,8 @@
 }
 
 #telephone img {
-  width: 120px;
-  height: 120px;
+  width: 118px;
+  height: 118px;
+  margin-right: 10px;
 }
 
