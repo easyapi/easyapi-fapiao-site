@@ -6,7 +6,7 @@ var app = new Vue({
       treeData: [],
       listData: [],
       input: '',
-      loading:true,
+      loading: true,
       defaultProps: {
         children: 'children',
         label: 'name'
@@ -20,9 +20,9 @@ var app = new Vue({
     getTree() {
       axios.get("https://api.easyapi.com/tax-code/tree").then(res => {
         let data = res.data
-        if (data.code == 1) {
+        if (data.code === 1) {
           this.treeData = data.content
-          this.loading=false
+          this.loading = false
         }
       })
     },
@@ -34,7 +34,7 @@ var app = new Vue({
           q: this.input,
         }
       }).then(res => {
-        if (res.data.code == 1) {
+        if (res.data.code === 1) {
           this.listData = res.data.content
         } else {
           this.listData = []
@@ -44,7 +44,7 @@ var app = new Vue({
     handleNodeClick(data) {
       this.parentId = data.taxCodeId
       axios.get("https://api.easyapi.com/tax-codes", {params: {parentId: data.taxCodeId}}).then(res => {
-        if (res.data.code==1) {
+        if (res.data.code === 1) {
           this.listData = res.data.content
         }
       })

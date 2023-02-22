@@ -1,168 +1,203 @@
-.f-fr{
-  float:right;
+.f-fr {
+  float: right;
 }
+
 .big-text {
   font-weight: bold;
 }
-.f-fl{
-  float:left;
+
+.f-fl {
+  float: left;
 }
-.grey_bd{
+
+.grey_bd {
   background-color: #f8f8f9;
 }
-.fp_bd{
+
+.fp_bd {
   background-image: url("../images/pc/banner.png");
   width: 100%;
-  height:520px;
+  height: 520px;
   background-size: cover;
 }
-.fp_width{
+
+.fp_width {
   max-width: 1200px;
   margin: 0 auto;
 }
-.fp_head{
+
+.fp_head {
   width: 100%;
   height: 68px;
 }
-.dis_hide{
-  display:none;
+
+.dis_hide {
+  display: none;
 }
-.fp_head a:hover{
-  /*color: rgba(255,255,255,0.5);*/
+
+.fp_head a:hover {
   font-weight: bold;
 }
-.active{
+
+.active {
   font-weight: bold;
 }
-.fp_logo{
+
+.fp_logo {
   width: 220px;
   float: left;
-  height:68px;
+  height: 68px;
 }
-.fp_logo li{
+
+.fp_logo li {
   float: left;
   line-height: 68px;
 }
-.fp_logo li a img{
+
+.fp_logo li a img {
   margin-top: 24px;
 
 }
-.fp_logo li span{
+
+.fp_logo li span {
   display: inline-block;
   margin: 0 10px;
   color: #fff;
 }
-.fp_logo li a{
+
+.fp_logo li a {
   color: #fff;
   font-size: 18px;
 }
-.fa_list{
-  height:68px;
+
+.fa_list {
+  height: 68px;
   float: left;
   margin-left: 140px;
 }
-.fa_list li{
+
+.fa_list li {
   float: left;
   line-height: 68px;
   margin-right: 30px;
 }
-.fa_list li a{
+
+.fa_list li a {
   color: #fff;
   font-size: 14px;
   margin-right: 30px;
 }
-.fa_fr{
+
+.fa_fr {
   float: right;
-  height:68px;
+  height: 68px;
 
 }
-.fa_fr li{
+
+.fa_fr li {
   float: left;
   line-height: 68px;
   margin-right: 30px;
 }
-.fa_fr li:last-child{
+
+.fa_fr li:last-child {
   margin-right: 0;
 }
-.fa_fr li a{
+
+.fa_fr li a {
   color: #fff;
   font-size: 14px;
 }
-.fa_console a{
-  border:1px solid #fff;
-  padding:6px  16px;
+
+.fa_console a {
+  border: 1px solid #fff;
+  padding: 6px 16px;
   border-radius: 4px;
 }
-.fa_avatar{
+
+.fa_avatar {
   position: relative;
 }
-.fa_avatar img{
+
+.fa_avatar img {
   width: 40px;
-  height:40px;
+  height: 40px;
   border-radius: 50%;
   margin-top: 14px;
   cursor: pointer;
 }
-.fa_avatar:hover .avatar_down{
- display: block;
+
+.fa_avatar:hover .avatar_down {
+  display: block;
 }
-.avatar_down{
+
+.avatar_down {
   display: none;
   width: 100px;
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
-  border:1px solid #ddd;
-  top:70px;
-  right:50%;
+  border: 1px solid #ddd;
+  top: 70px;
+  right: 50%;
   margin-right: -50px;
 }
-.avatar_down .avatar_item{
+
+.avatar_down .avatar_item {
   text-align: center;
   line-height: 40px;
-  border-bottom:1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
-.avatar_down .avatar_item:last-child{
+
+.avatar_down .avatar_item:last-child {
   border-bottom: 0;
 }
-.avatar_down .avatar_item a{
+
+.avatar_down .avatar_item a {
   color: #666;
   font-size: 14px;
 }
-.avatar_down .avatar_item a:hover{
+
+.avatar_down .avatar_item a:hover {
   color: #18c1d6;
 }
 
 
-.fp_block{
+.fp_block {
   overflow: hidden;
   margin-bottom: 80px;
 }
-.fp_top{
+
+.fp_top {
   font-size: 36px;
   margin-top: 120px;
-  margin-bottom:80px;
+  margin-bottom: 80px;
   text-align: center;
 }
-.fp_list{
+
+.fp_list {
   padding: 80px 0;
   overflow: hidden;
 }
-.set_with{
+
+.set_with {
   overflow: hidden;
 }
-.set_with li:first-child{
+
+.set_with li:first-child {
   width: 60%;
 }
-.set_with li:last-child{
+
+.set_with li:last-child {
   width: 40%;
 }
 
-.set_with li p{
+.set_with li p {
   font-size: 14px;
   line-height: 30px;
 }
-.set_with li p span{
+
+.set_with li p span {
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -171,55 +206,63 @@
   margin-right: 5px;
 
 }
-.set_with li p:first-child{
+
+.set_with li p:first-child {
   font-size: 36px;
   padding-bottom: 15px;
   line-height: 40px;
 }
-.fapiao_list{
+
+.fapiao_list {
   clear: both;
   margin-top: 20px;
   overflow: hidden;
 }
-.fapiao_list img{
+
+.fapiao_list img {
   float: left;
 }
-.fapiao_list span{
+
+.fapiao_list span {
   float: left;
   line-height: 50px;
   margin-left: 15px;
   font-size: 18px;
 }
-.fapiao_target{
+
+.fapiao_target {
   background-image: url('../images/pc/bg_invoice_aim.png');
-  width:100%;
+  width: 100%;
   height: 120px;
-  /* line-height: 300px; */
   padding: 90px 0;
   text-align: center;
   color: #fff;
   font-size: 24px;
 }
-.fapiao_target p{
+
+.fapiao_target p {
   font-size: 36px;
   margin-bottom: 15px;
 }
+
 /* 产品形态 */
-.advice_content{
+.advice_content {
   width: 100%;
   height: 412px;
 }
+
 .product_title {
   text-align: center;
   padding: 72px 0;
   font-size: 36px;
 }
-.product_img{
+
+.product_img {
   width: 100%;
   overflow: hidden;
 }
 
-.product_img li{
+.product_img li {
   float: left;
   width: 33%;
   box-sizing: border-box;
@@ -228,77 +271,90 @@
   font-size: 14px;
 
 }
-.product_img li p{
+
+.product_img li p {
   margin-top: 15px;
 }
-.product_img li img{
+
+.product_img li img {
   width: 110px;
   height: 110px;
 }
+
 /* 我们可以满足谁 */
 .statisfy_content {
   width: 100%;
   height: 530px;
   background-color: #fafafa;
 }
-.statisfy_img{
+
+.statisfy_img {
   width: 100%;
   float: left;
 
 }
-.statisfy_img li{
+
+.statisfy_img li {
   float: left;
   width: 33%;
   list-style: none;
   padding-right: 15px;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
+
 .statisfy_img img {
   width: 100%;
   height: 220px;
 }
+
 .statisfy_text {
   width: 100%;
   height: 50px;
   line-height: 50px;
   background-color: white;
   font-size: 14px;
-  margin: 0!important;
+  margin: 0 !important;
   text-align: center;
   box-shadow: 1px 1px 1px 1px #ededee;
 
 }
+
 /* join */
 .join {
   width: 100%;
   height: 340px;
-  border-bottom:1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   vertical-align: middle;
   text-align: center
 
 }
+
 .join p {
   color: #18c1d6;
   font-size: 14px;
   display: inline-block;
 
 }
+
 .parent {
   position: relative;
 
 }
+
 .join .posi li .text1 {
   position: absolute;
   left: 285px;
   top: 44px;
 
 }
-.join .posi li  .text2 {
+
+.join .posi li .text2 {
   position: absolute;
   left: 474px;
   top: 44px;
 
 }
+
 .join .posi li .text3 {
   position: absolute;
   left: 665px;
@@ -306,27 +362,31 @@
 
 
 }
+
 .join .posi li .text4 {
   position: absolute;
   right: 286px;
   top: 44px;
 
 }
+
 /* why owner */
 .why_owner {
   width: 100%;
   height: 490px;
   border-bottom: 1px solid #ddd;
 }
+
 .text {
-  color: rgb(134,134,134);
+  color: rgb(134, 134, 134);
 }
-.offer_img{
+
+.offer_img {
   width: 100%;
   overflow: hidden;
 }
 
-.offer_img li{
+.offer_img li {
   float: left;
   width: 21%;
   overflow: hidden;
@@ -335,76 +395,84 @@
   font-size: 14px;
 
 }
-.offer_img li p{
+
+.offer_img li p {
   margin-top: 15px;
 }
-.offer_img li img{
+
+.offer_img li img {
   width: 110px;
   height: 110px;
 }
 
 
-
-
-
-
-
-
-.fapiao_link{
+.fapiao_link {
   width: 100%;
   padding: 80px 0;
-  background-color: rgb(249,249,249)
+  background-color: rgb(249, 249, 249)
 
 }
-.btns{
+
+.btns {
   margin-top: 45px;
 }
-.btns a{
+
+.btns a {
   display: inline-block;
   padding: 8px 25px;
-  border:1px solid #18c1d6;
+  border: 1px solid #18c1d6;
   color: #18c1d6;
   border-radius: 4px;
 }
-.btns a:last-child{
+
+.btns a:last-child {
   margin-left: 30px;
 }
-.btns .active{
+
+.btns .active {
   background-color: #18c1d6;
   color: #fff;
 }
-.m-morebox{
+
+.m-morebox {
   width: 100%;
   background-image: url(https://static.easyapi.com/images/market/bg_0.png);
   margin-bottom: 0;
   background-size: cover;
 }
+
 .footer {
   text-align: center;
   background: white;
 
 }
-.footer a{
+
+.footer a {
   padding: 0 15px;
 }
-.banner_content{
-  padding-top:150px;
+
+.banner_content {
+  padding-top: 150px;
   text-align: center;
   color: #fff;
 }
-.banner_title{
+
+.banner_title {
   font-size: 48px;
   padding-bottom: 20px;
   color: #fff
 }
-.banner_dis{
+
+.banner_dis {
   font-size: 24px;
   padding-bottom: 15px;
 }
+
 .banner-dis-text {
   font-size: 14px;
 }
-.banner_btn{
+
+.banner_btn {
   display: inline-block;
   margin-top: 40px;
 
