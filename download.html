@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>EasyAPI发票机器人下载 - 发票管理 - EasyAPI场景化服务</title>
+  <link href="https://static.easyapi.com/css/site.min.css" rel="stylesheet"/>
+  <meta name="descriptions" content="EasyAPI发票管理是一个一站式发票管理平台，支持电子发票，纸质发票，轻松与您的产品无缝对接。"/>
+  <meta name="keywords" content="电子发票接口,电子发票API接口,电子发票API,申请发票,申请发票API,发票管理,发票管理API,电子发票,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <style>
+    .f-fr {
+      float: right;
+    }
+
+    .f-fl {
+      float: left;
+    }
+
+    .dis_hide {
+      display: none;
+    }
+
+    .fp_bd {
+      background-color: #18c1d6;
+      width: 100%;
+      height: 68px;
+      background-size: cover;
+    }
+
+    .fp_width {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    .fp_head {
+      width: 100%;
+      height: 68px;
+    }
+
+    .fp_head a:hover {
+      font-weight: bold;
+    }
+
+    .active {
+      font-weight: bold;
+    }
+
+    .fp_logo {
+      width: 220px;
+      float: left;
+      height: 68px;
+    }
+
+    .fp_logo li {
+      float: left;
+      line-height: 68px;
+    }
+
+    .fp_logo li a img {
+      margin-top: 24px;
+    }
+
+    .fp_logo li span {
+      display: inline-block;
+      margin: 0 10px;
+      color: #fff;
+    }
+
+    .fp_logo li a {
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .fa_list {
+      height: 68px;
+      float: left;
+      margin-left: 140px;
+    }
+
+    .fa_list li {
+      float: left;
+      line-height: 68px;
+      margin-right: 30px;
+    }
+
+    .fa_list li a {
+      color: #fff;
+      font-size: 14px;
+      margin-right: 30px;
+    }
+
+    .fa_fr {
+      float: right;
+      height: 68px;
+    }
+
+    .fa_fr li {
+      float: left;
+      line-height: 68px;
+      margin-right: 30px;
+    }
+
+    .fa_fr li:last-child {
+      margin-right: 0;
+    }
+
+    .fa_fr li a {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .fa_console a {
+      border: 1px solid #fff;
+      padding: 6px 16px;
+      border-radius: 4px;
+    }
+
+    .fa_avatar {
+      position: relative;
+    }
+
+    .fa_avatar img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-top: 14px;
+      cursor: pointer;
+    }
+
+    .fa_avatar:hover .avatar_down {
+      display: block;
+    }
+
+    .avatar_down {
+      display: none;
+      width: 100px;
+      background-color: #fff;
+      border-radius: 4px;
+      position: absolute;
+      border: 1px solid #ddd;
+      top: 70px;
+      right: 50%;
+      margin-right: -50px;
+    }
+
+    .avatar_down .avatar_item {
+      text-align: center;
+      line-height: 40px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .avatar_down .avatar_item:last-child {
+      border-bottom: 0;
+    }
+
+    .avatar_down .avatar_item a {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .avatar_down .avatar_item a:hover {
+      color: #18c1d6;
+    }
+
+    .footer a {
+      padding: 0 15px;
+    }
+
+    .introduction_list {
+      padding-top: 84px;
+      padding-bottom: 200px;
+      overflow: hidden;
+    }
+
+    .introduction_item {
+      overflow: hidden;
+      margin-top: 50px;
+    }
+
+    .introduction_top {
+      font-size: 36px;
+      text-align: center;
+      padding-bottom: 80px;
+    }
+
+    .introduction_txt {
+      width: 40%;
+      margin-top: 200px;
+    }
+
+    .introduction_txt p {
+      font-size: 36px;
+      padding-bottom: 50px;
+    }
+
+    .introduction_txt ul li {
+      font-size: 18px;
+      color: #666;
+      line-height: 30px;
+    }
+
+    .robot {
+      display: flex;
+      align-items: center;
+      width: 480px;
+      justify-content: space-around;
+    }
+
+    .download {
+      margin-top: 30px;
+      width: 200px;
+      height: 50px;
+      background-color: rgb(255, 106, 0);
+      border-radius: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .version {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="fp_bd">
+  <div class="fp_width">
+    <div class="fp_head">
+      <ul class="fp_logo">
+        <li>
+          <a href="https://fapiao.easyapi.com/">
+            <img src="https://static.easyapi.com/images/market/logo.png"/>
+          </a>
+        </li>
+        <li>
+          <span>&nbsp;·&nbsp;</span>
+          <a href="index.html"> 发票管理 </a>
+        </li>
+      </ul>
+      <ul class="fa_fr">
+        <li id="login">
+          <a href="https://fapiao.easyapi.com/console/login">登录</a>
+        </li>
+        <li class="fa_console dis_hide" id="console">
+          <a href="https://fapiao.easyapi.com/console/">控制台</a>
+        </li>
+        <li class="fa_avatar dis_hide" id="avatar">
+          <img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg"/>
+          <div class="avatar_down">
+            <div class="avatar_item">
+              <a href="javascript:;" onclick="$.cookie('fpAuthToken', '', {expires: -1});location.reload();">退出</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="introduction_list" style="background-color: #f8f8f9">
+  <div class="fp_width">
+    <div class="introduction_top">
+      <span>助手下载</span>
+    </div>
+    <div class="introduction_item">
+      <div class="introduction_txt f-fl" style="margin-top: 50px">
+        <p>EasyAPI发票机器人</p>
+        <ul>
+          <li>提供HTTP协议接口，WebSocket接口（OEM版）</li>
+          <li>支持普通电子发票，全电电子发票</li>
+          <li>支持淘宝、京东、拼多多、抖音、快手、有赞、苏宁易购、阿里巴巴等电商平台自动开票</li>
+        </ul>
+        <div class="robot">
+          <div class="download">
+            <a style="color: white" href="https://qiniu.easyapi.com/fapiao/v1.0.3/%E5%8F%91%E7%A5%A8%E6%9C%BA%E5%99%A8%E4%BA%BA.zip">立即下载</a>
+          </div>
+          <div class="version">版本号:1.0.3</div>
+          <div class="version"><a target="_blank" href="https://bangqu.easyapi.com/project/28385/document/31743/api/266031/text">安装教程</a></div>
+        </div>
+      </div>
+
+      <div class="f-fr">
+        <img src="images/robot-extension.png" width="610"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer f-cb">
+  <p>
+    <a href="https://www.easyapi.com/info/about">关于我们</a>
+    <a href="https://www.easyapi.com/info/together">合作伙伴</a>
+    <a href="https://www.easyapi.com/info/contact">联系我们</a>
+    <a href="https://www.easyapi.com/info/donate">支持我们</a>
+  </p>
+  <p>Copyright © 2014～2022 上海帮趣网络技术有限公司</p>
+  <p>
+    <a href="https://beian.miit.gov.cn" target="_blank"
+    >沪ICP备19007521号</a
+    >
+  </p>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"
+></script>
+
+<script>
+  //        $("#change-more").on("click",function () {
+  //            $(this).prevAll().removeClass('active');
+  //            $("#Lmore").toggle();
+  //        })
+  //
+  //        $('[setL]').on("click",function () {
+  //            $(this).prevAll().removeClass('active');
+  //            $(this).addClass("active");
+  //        })
+
+  if ($.cookie("fpAuthToken")) {
+    $.ajax({
+      method: "GET",
+      url: "https://fapiao-api.easyapi.com/api/account",
+      beforeSend: function (request) {
+        request.setRequestHeader(
+          "Authorization",
+          "Bearer " + $.cookie("fpAuthToken")
+        );
+      },
+      success: function (data) {
+        //$("#photo").attr("src", data.photo + "!icon.jpg");
+        $("#avatar").removeClass("dis_hide");
+        $("#login").addClass("dis_hide");
+        $("#register").addClass("dis_hide");
+        $("#console").removeClass("dis_hide");
+      },
+    });
+  }
+</script>
+<script src="js/tongji.js"></script>
+</body>
+</html>
