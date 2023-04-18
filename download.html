@@ -363,14 +363,17 @@
             );
           },
           success: function (data) {
-            console.log(JSON.parse(data.content));
+            console.log(JSON.parse(data.content).url.slice(34, 42), 78789);
             document.getElementsByClassName("version")[0].innerText =
               "版本号：v" + JSON.parse(data.content).version;
             document.getElementsByClassName(
               "down"
-            )[0].href = `https://qiniu.easyapi.com/fapiao/v${
-              JSON.parse(data.content).version
-            }/%E5%8F%91%E7%A5%A8%E6%9C%BA%E5%99%A8%E4%BA%BA.zip`;
+            )[0].href = `https://qiniu.easyapi.com/fapiao/v${JSON.parse(
+              data.content
+            ).url.slice(
+              34,
+              42
+            )}/%E5%8F%91%E7%A5%A8%E6%9C%BA%E5%99%A8%E4%BA%BA.zip`;
           },
         });
       }
