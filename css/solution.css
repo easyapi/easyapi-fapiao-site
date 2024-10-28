@@ -498,14 +498,14 @@
 }
 
 /* 2 */
-.cooperetion_img {
+.cooperation_img {
   width: 100%;
   float: left;
   margin-top: 20px;
 
 }
 
-.cooperetion_img li {
+.cooperation_img li {
   float: left;
   width: 25%;
   list-style: none;
@@ -513,14 +513,14 @@
   box-sizing: border-box;
 }
 
-.cooperetion_img img {
+.cooperation_img img {
   width: 240px;;
 
   height: 450px;
   padding-left: 25px;
 }
 
-.cooperetion_img .number {
+.cooperation_img .number {
   display: block;
   width: 20px;
   height: 20px;
@@ -629,7 +629,7 @@
   height: 200px;
 } */
 
-.fapiao_link {
+.invoice_link {
   width: 100%;
   padding: 80px 0;
   background-color: rgb(249, 249, 249)

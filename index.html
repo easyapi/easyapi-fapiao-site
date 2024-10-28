@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>EasyAPI电子发票包括电子发票API与数电（全电）发票API - EasyAPI场景化服务</title>
+  <title>EasyAPI电子发票API包括电子发票API与数电发票API - EasyAPI电子发票</title>
   <link href="https://static.easyapi.com/css/site.min.css" rel="stylesheet"/>
   <meta name="descriptions" content="EasyAPI电子发票是一个一站式电子发票管理平台，支持电子发票API，纸质发票API，全电发票API，数电票API，数电发票API，轻松与您的产品无缝对接。"/>
   <meta name="keywords" content="电子发票接口,电子发票API接口,电子发票API,全电发票API,数电票API,数电发票API,申请发票,申请发票API,发票管理,发票管理API,电子发票,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
@@ -13,9 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-<!-- banner and header start-->
 <div class="fp_bd">
   <div class="fp_width">
     <div class="fp_head">
@@ -67,7 +64,8 @@
             </div>
           </div>
           <div class="contact_us_line">
-            <span class="contact_us_h3">热线电话</span> ：<span class="contact_us_color"> 0510-85180020，136-5617-1020</span>
+            <span class="contact_us_h3">热线电话</span> ：<span
+            class="contact_us_color"> 0510-85180020，136-5617-1020</span>
           </div>
           <div class="contact_us_line">
             <span class="contact_us_h3">邮箱</span>：<span class="contact_us_color">leida#easyapi.com </span>
@@ -75,11 +73,8 @@
         </div>
       </ul>
       <ul class="fa_fr">
-        <!-- <li id="register">
-          <a href="https://fapiao.easyapi.com/console/signup">注册</a>
-        </li> -->
         <li id="login">
-          <a href="https://fapiao.easyapi.com/console/login">登录</a>
+          <a href="https://fapiao.easyapi.com/console/login">登录/注册</a>
         </li>
         <li class="fa_console dis_hide" id="console">
           <a href="https://fapiao.easyapi.com/console/">控制台</a>
@@ -113,9 +108,6 @@
       </div>
     </div>
   </div>
-  <!--  banber and header end -->
-  <!-- cnotent  start-->
-  <!-- product-status  start-->
   <div class="product_status">
     <div class="fp_width">
       <div class="product_title">
@@ -310,14 +302,14 @@
     </div>
   </div>
 
-  <div class="cooperetion">
+  <div class="cooperation">
     <div class="fp_width">
       <div class="product_title">
         <span>合作伙伴</span>
       </div>
-      <ul class="cooperetion_img">
+      <ul class="cooperation_img">
         <li>
-          <a href="http://www.aisino.com/" target="_blank"><img
+          <a href="https://www.aisino.com/" target="_blank"><img
             src="images/pc/pic_invoice_home_corebusiness.pngpic_invoice_home_develop.pngpic_invoice_home_efficient.pngpic_invoice_home_logo1.png"/>
           </a>
         </li>
@@ -325,7 +317,7 @@
           <a href="https://www.baiwang.com/" target="_blank"><img src="images/pc/pic_invoice_home_logo2.png"/></a>
         </li>
         <li>
-          <a href="http://www.holytax.com/" target="_blank"><img src="images/pc/pic_invoice_home_logo3.png"/></a>
+          <a href="https://www.holytax.com/" target="_blank"><img src="images/pc/pic_invoice_home_logo3.png"/></a>
 
         </li>
         <li>
@@ -337,7 +329,7 @@
       </ul>
     </div>
   </div>
-  <div class="fapiao_link">
+  <div class="invoice_link">
     <div class="fp_width" style="text-align: center">
       <p style="font-size: 36px;">马上集成领先的电子发票API系统</p>
       <div class="btnss">
@@ -346,7 +338,6 @@
       </div>
     </div>
   </div>
-
   <div class="footer f-cb">
     <p>
       <a href="https://www.easyapi.com/info/about">关于我们</a>
@@ -354,10 +345,9 @@
       <a href="https://www.easyapi.com/info/contact">联系我们</a>
       <a href="https://www.easyapi.com/info/donate">支持我们</a>
     </p>
-    <p>Copyright © 2014～2023 上海帮趣网络技术有限公司</p>
+    <p>Copyright © 2014～2024 上海帮趣网络技术有限公司</p>
     <p><a href="https://beian.miit.gov.cn" target="_blank">沪ICP备19007521号</a></p>
   </div>
-
   <div class="launcher" id="openImg">
     <div class="launcher-close-icon open">
       <img id="open" class="Launcher-img" src="https://ppmessage.cn/ppcom/assets/img/icon-newacquire.png" alt="open">
@@ -368,7 +358,6 @@
       <img id="close" class="Launcher-img" src="https://ppmessage.cn/ppcom/assets/img/icon-close.png" alt="close">
     </div>
   </div>
-
   <div id="telephone">
     <div>
       <div class="contact_us_line">
@@ -392,11 +381,9 @@
       </div>
     </div>
   </div>
-
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-
   <script>
     if ($.cookie("fpAuthToken")) {
       $.ajax({
@@ -406,10 +393,8 @@
           request.setRequestHeader("Authorization", "Bearer " + $.cookie("fpAuthToken"));
         },
         success: function (data) {
-          //$("#photo").attr("src", data.photo + "!icon.jpg");
           $("#avatar").removeClass('dis_hide');
           $("#login").addClass('dis_hide');
-          $("#register").addClass('dis_hide');
           $("#console").removeClass('dis_hide');
         }
       });
@@ -425,7 +410,5 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-
 </body>
-
 </html>

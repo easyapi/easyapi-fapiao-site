@@ -435,18 +435,18 @@
 }
 
 /* 合作伙伴 */
-.cooperetion {
+.cooperation {
   width: 100%;
   height: 398px;
 }
 
-.cooperetion_img {
+.cooperation_img {
   width: 100%;
   float: left;
 
 }
 
-.cooperetion_img li {
+.cooperation_img li {
   float: left;
   width: 20%;
   list-style: none;
@@ -454,12 +454,12 @@
   box-sizing: border-box;
 }
 
-.cooperetion_img img {
+.cooperation_img img {
   width: 100%;
   height: 110px;
 }
 
-.fapiao_link {
+.invoice_link {
   width: 100%;
   padding: 80px 0;
   background-color: rgb(249, 249, 249)
