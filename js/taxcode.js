@@ -189,9 +189,9 @@ var app = new Vue({
       this.syncTreeCurrentKey(data.taxCodeId)
       this.searchMode = false
       const isLeaf = node.isLeaf || !data.children || data.children.length === 0
-      if (isLeaf && node.parent && node.parent.data && node.parent.data.taxCodeId) {
-        this.parentId = node.parent.data.taxCodeId
-        this.leafQuery = data.name
+      if (isLeaf) {
+        this.parentId = ''
+        this.leafQuery = data.code || ''
       } else {
         this.parentId = data.taxCodeId
         this.leafQuery = ''
