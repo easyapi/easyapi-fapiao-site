@@ -7,7 +7,7 @@
   <link href="https://static.easyapi.com/css/site.min.css" rel="stylesheet"/>
   <meta name="descriptions" content="EasyAPI发票管理是一个一站式发票管理平台，支持电子发票，纸质发票，轻松与您的产品无缝对接。"/>
   <meta name="keywords" content="税收分类编码,电子发票接口,电子发票API,电子发票API接口,申请发票API,发票管理,发票管理API,电子发票,纸质发票,纸质发票API,申请发票H5,发票自助快递"/>
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/taxcode.css">
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.7/theme-chalk/index.min.css">
@@ -33,54 +33,134 @@
       </div>
     </div>
   </div>
+  <el-scrollbar class="page-scroll">
+  <div class="page-inner">
   <div class="bd">
-    <span class="info_2">
-      税收编码查询
-    </span>
+    <div class="page-title-row">
+      <span class="info_2">税收编码查询</span>
+      <button
+        v-if="isMobile"
+        type="button"
+        class="tree-drawer-trigger"
+        aria-label="打开税收分类目录"
+        @click="openTreeDrawer">
+        <i class="el-icon-s-unfold"></i>
+      </button>
+    </div>
     <div class="block_14">
-      <div class="block_9">
-        <el-tree v-loading="loading" element-loading-text="加载中" element-loading-background="white" :data="treeData"
-                 :props="defaultProps" @node-click="handleNodeClick"></el-tree>
+      <div class="block_9" v-if="!isMobile">
+        <el-scrollbar ref="treeScroll" class="tree-scroll">
+          <el-tree
+            ref="taxTree"
+            v-loading="loading"
+            element-loading-text="加载中"
+            element-loading-background="white"
+            highlight-current
+            :expand-on-click-node="false"
+            node-key="taxCodeId"
+            :data="treeData"
+            :props="defaultProps"
+            @node-expand="updateTreeScrollbar"
+            @node-collapse="updateTreeScrollbar">
+            <span
+              class="el-tree-node__label tree-node-label"
+              slot-scope="{ node, data }"
+              @click.stop="handleNodeClick(data, node)">
+              {{ node.label }}
+            </span>
+          </el-tree>
+        </el-scrollbar>
       </div>
+
+      <el-drawer
+        v-if="isMobile"
+        title="税收分类目录"
+        :visible.sync="treeDrawerVisible"
+        direction="ltr"
+        size="82%"
+        :append-to-body="true"
+        custom-class="tax-tree-drawer"
+        @opened="onTreeDrawerOpened">
+        <el-scrollbar ref="treeScrollMobile" class="tree-scroll tree-scroll--drawer">
+          <el-tree
+            ref="taxTreeMobile"
+            v-loading="loading"
+            element-loading-text="加载中"
+            element-loading-background="white"
+            highlight-current
+            :expand-on-click-node="false"
+            node-key="taxCodeId"
+            :data="treeData"
+            :props="defaultProps"
+            @node-expand="updateTreeScrollbar"
+            @node-collapse="updateTreeScrollbar">
+            <span
+              class="el-tree-node__label tree-node-label"
+              slot-scope="{ node, data }"
+              @click.stop="handleNodeClick(data, node)">
+              {{ node.label }}
+            </span>
+          </el-tree>
+        </el-scrollbar>
+      </el-drawer>
 
       <div class="group_12">
         <div class="block_11">
           <div class="search">
             <el-input v-model="input" placeholder="请输入税收编码关键字" clearable></el-input>
           </div>
-          <el-button @input="change($event)" type="primary" @click="handSearch">搜索</el-button>
+          <el-button type="primary" @click="handSearch">搜索</el-button>
         </div>
         <div class="group_11">
-          <el-table
-            :data="listData"
-            style="width: 100%">
-            <el-table-column
-              prop="code"
-              label="税收分类编码"
-              width="180">
-            </el-table-column>
-            <el-table-column
-              prop="name"
-              label="税收分类名称"
-              width="180">
-            </el-table-column>
-            <el-table-column
-              prop="rate"
-              label="增值税税率(%)">
-            </el-table-column>
-            <el-table-column
-              prop="preferentialPolicyName"
-              label="增值税特殊管理">
-            </el-table-column>
-            <el-table-column
-              prop="address"
-              label="增值税政策依据">
-            </el-table-column>
-            <el-table-column
-              prop="shortName"
-              label="关键字">
-            </el-table-column>
-          </el-table>
+          <el-scrollbar class="table-scroll">
+            <el-table
+              v-loading="tableLoading"
+              element-loading-text="加载中"
+              element-loading-background="rgba(255, 255, 255, 0.8)"
+              :data="listData"
+              style="width: 100%">
+              <el-table-column
+                prop="code"
+                label="税收分类编码"
+                width="180">
+              </el-table-column>
+              <el-table-column
+                prop="name"
+                label="税收分类名称"
+                width="180">
+              </el-table-column>
+              <el-table-column
+                prop="rate"
+                label="增值税税率(%)">
+              </el-table-column>
+              <el-table-column
+                prop="preferentialPolicyName"
+                label="增值税特殊管理">
+              </el-table-column>
+              <el-table-column
+                prop="address"
+                label="增值税政策依据">
+              </el-table-column>
+              <el-table-column
+                prop="shortName"
+                label="关键字">
+              </el-table-column>
+            </el-table>
+          </el-scrollbar>
+          <div class="table-pagination">
+            <el-pagination
+              background
+              :small="isMobile"
+              :layout="paginationLayout"
+              :pager-count="paginationPagerCount"
+              :current-page="page + 1"
+              :page-size="pageSize"
+              :page-sizes="[10, 20, 50, 100]"
+              :total="total"
+              @current-change="handlePageChange"
+              @size-change="handleSizeChange">
+            </el-pagination>
+          </div>
         </div>
       </div>
     </div>
@@ -95,6 +175,8 @@
     <p>Copyright © 2014～2024 上海帮趣网络技术有限公司</p>
     <p><a href="https://beian.miit.gov.cn" target="_blank">沪ICP备19007521号</a></p>
   </div>
+  </div>
+  </el-scrollbar>
 </div>
 <!-- banner and header start-->
 
